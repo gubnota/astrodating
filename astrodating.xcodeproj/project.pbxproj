@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		94ABB4C92C2E869700370F39 /* astrodatingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94ABB4C82C2E869700370F39 /* astrodatingApp.swift */; };
+		94ABB4CB2C2E869700370F39 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94ABB4CA2C2E869700370F39 /* ContentView.swift */; };
+		94ABB4CD2C2E869800370F39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94ABB4CC2C2E869800370F39 /* Assets.xcassets */; };
+		94ABB4D02C2E869800370F39 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94ABB4CF2C2E869800370F39 /* Preview Assets.xcassets */; };
+		94ABB4DA2C2E869800370F39 /* astrodatingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94ABB4D92C2E869800370F39 /* astrodatingTests.swift */; };
+		94ABB4E42C2E869800370F39 /* astrodatingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94ABB4E32C2E869800370F39 /* astrodatingUITests.swift */; };
+		94ABB4E62C2E869800370F39 /* astrodatingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94ABB4E52C2E869800370F39 /* astrodatingUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		94ABB4D62C2E869800370F39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94ABB4BD2C2E869700370F39 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94ABB4C42C2E869700370F39;
+			remoteInfo = astrodating;
+		};
+		94ABB4E02C2E869800370F39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94ABB4BD2C2E869700370F39 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94ABB4C42C2E869700370F39;
+			remoteInfo = astrodating;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		94ABB4C52C2E869700370F39 /* astrodating.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = astrodating.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		94ABB4C82C2E869700370F39 /* astrodatingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = astrodatingApp.swift; sourceTree = "<group>"; };
+		94ABB4CA2C2E869700370F39 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		94ABB4CC2C2E869800370F39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		94ABB4CF2C2E869800370F39 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		94ABB4D52C2E869800370F39 /* astrodatingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = astrodatingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		94ABB4D92C2E869800370F39 /* astrodatingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = astrodatingTests.swift; sourceTree = "<group>"; };
+		94ABB4DF2C2E869800370F39 /* astrodatingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = astrodatingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		94ABB4E32C2E869800370F39 /* astrodatingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = astrodatingUITests.swift; sourceTree = "<group>"; };
+		94ABB4E52C2E869800370F39 /* astrodatingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = astrodatingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		94ABB4C22C2E869700370F39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94ABB4D22C2E869800370F39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94ABB4DC2C2E869800370F39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		94ABB4BC2C2E869700370F39 = {
+			isa = PBXGroup;
+			children = (
+				94ABB4C72C2E869700370F39 /* astrodating */,
+				94ABB4D82C2E869800370F39 /* astrodatingTests */,
+				94ABB4E22C2E869800370F39 /* astrodatingUITests */,
+				94ABB4C62C2E869700370F39 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		94ABB4C62C2E869700370F39 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				94ABB4C52C2E869700370F39 /* astrodating.app */,
+				94ABB4D52C2E869800370F39 /* astrodatingTests.xctest */,
+				94ABB4DF2C2E869800370F39 /* astrodatingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		94ABB4C72C2E869700370F39 /* astrodating */ = {
+			isa = PBXGroup;
+			children = (
+				94ABB4C82C2E869700370F39 /* astrodatingApp.swift */,
+				94ABB4CA2C2E869700370F39 /* ContentView.swift */,
+				94ABB4CC2C2E869800370F39 /* Assets.xcassets */,
+				94ABB4CE2C2E869800370F39 /* Preview Content */,
+			);
+			path = astrodating;
+			sourceTree = "<group>";
+		};
+		94ABB4CE2C2E869800370F39 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				94ABB4CF2C2E869800370F39 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		94ABB4D82C2E869800370F39 /* astrodatingTests */ = {
+			isa = PBXGroup;
+			children = (
+				94ABB4D92C2E869800370F39 /* astrodatingTests.swift */,
+			);
+			path = astrodatingTests;
+			sourceTree = "<group>";
+		};
+		94ABB4E22C2E869800370F39 /* astrodatingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				94ABB4E32C2E869800370F39 /* astrodatingUITests.swift */,
+				94ABB4E52C2E869800370F39 /* astrodatingUITestsLaunchTests.swift */,
+			);
+			path = astrodatingUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		94ABB4C42C2E869700370F39 /* astrodating */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94ABB4E92C2E869800370F39 /* Build configuration list for PBXNativeTarget "astrodating" */;
+			buildPhases = (
+				94ABB4C12C2E869700370F39 /* Sources */,
+				94ABB4C22C2E869700370F39 /* Frameworks */,
+				94ABB4C32C2E869700370F39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = astrodating;
+			productName = astrodating;
+			productReference = 94ABB4C52C2E869700370F39 /* astrodating.app */;
+			productType = "com.apple.product-type.application";
+		};
+		94ABB4D42C2E869800370F39 /* astrodatingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94ABB4EC2C2E869800370F39 /* Build configuration list for PBXNativeTarget "astrodatingTests" */;
+			buildPhases = (
+				94ABB4D12C2E869800370F39 /* Sources */,
+				94ABB4D22C2E869800370F39 /* Frameworks */,
+				94ABB4D32C2E869800370F39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94ABB4D72C2E869800370F39 /* PBXTargetDependency */,
+			);
+			name = astrodatingTests;
+			productName = astrodatingTests;
+			productReference = 94ABB4D52C2E869800370F39 /* astrodatingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		94ABB4DE2C2E869800370F39 /* astrodatingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94ABB4EF2C2E869800370F39 /* Build configuration list for PBXNativeTarget "astrodatingUITests" */;
+			buildPhases = (
+				94ABB4DB2C2E869800370F39 /* Sources */,
+				94ABB4DC2C2E869800370F39 /* Frameworks */,
+				94ABB4DD2C2E869800370F39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94ABB4E12C2E869800370F39 /* PBXTargetDependency */,
+			);
+			name = astrodatingUITests;
+			productName = astrodatingUITests;
+			productReference = 94ABB4DF2C2E869800370F39 /* astrodatingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		94ABB4BD2C2E869700370F39 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					94ABB4C42C2E869700370F39 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					94ABB4D42C2E869800370F39 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 94ABB4C42C2E869700370F39;
+					};
+					94ABB4DE2C2E869800370F39 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 94ABB4C42C2E869700370F39;
+					};
+				};
+			};
+			buildConfigurationList = 94ABB4C02C2E869700370F39 /* Build configuration list for PBXProject "astrodating" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 94ABB4BC2C2E869700370F39;
+			productRefGroup = 94ABB4C62C2E869700370F39 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				94ABB4C42C2E869700370F39 /* astrodating */,
+				94ABB4D42C2E869800370F39 /* astrodatingTests */,
+				94ABB4DE2C2E869800370F39 /* astrodatingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		94ABB4C32C2E869700370F39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94ABB4D02C2E869800370F39 /* Preview Assets.xcassets in Resources */,
+				94ABB4CD2C2E869800370F39 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94ABB4D32C2E869800370F39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94ABB4DD2C2E869800370F39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		94ABB4C12C2E869700370F39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94ABB4CB2C2E869700370F39 /* ContentView.swift in Sources */,
+				94ABB4C92C2E869700370F39 /* astrodatingApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94ABB4D12C2E869800370F39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94ABB4DA2C2E869800370F39 /* astrodatingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94ABB4DB2C2E869800370F39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94ABB4E42C2E869800370F39 /* astrodatingUITests.swift in Sources */,
+				94ABB4E62C2E869800370F39 /* astrodatingUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		94ABB4D72C2E869800370F39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94ABB4C42C2E869700370F39 /* astrodating */;
+			targetProxy = 94ABB4D62C2E869800370F39 /* PBXContainerItemProxy */;
+		};
+		94ABB4E12C2E869800370F39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94ABB4C42C2E869700370F39 /* astrodating */;
+			targetProxy = 94ABB4E02C2E869800370F39 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		94ABB4E72C2E869800370F39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		94ABB4E82C2E869800370F39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		94ABB4EA2C2E869800370F39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"astrodating/Preview Content\"";
+				DEVELOPMENT_TEAM = RSD67YH647;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.astrodating;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		94ABB4EB2C2E869800370F39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"astrodating/Preview Content\"";
+				DEVELOPMENT_TEAM = RSD67YH647;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.astrodating;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		94ABB4ED2C2E869800370F39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RSD67YH647;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.astrodatingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/astrodating.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/astrodating";
+			};
+			name = Debug;
+		};
+		94ABB4EE2C2E869800370F39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RSD67YH647;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.astrodatingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/astrodating.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/astrodating";
+			};
+			name = Release;
+		};
+		94ABB4F02C2E869800370F39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RSD67YH647;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.astrodatingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = astrodating;
+			};
+			name = Debug;
+		};
+		94ABB4F12C2E869800370F39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RSD67YH647;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.astrodatingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = astrodating;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		94ABB4C02C2E869700370F39 /* Build configuration list for PBXProject "astrodating" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94ABB4E72C2E869800370F39 /* Debug */,
+				94ABB4E82C2E869800370F39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94ABB4E92C2E869800370F39 /* Build configuration list for PBXNativeTarget "astrodating" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94ABB4EA2C2E869800370F39 /* Debug */,
+				94ABB4EB2C2E869800370F39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94ABB4EC2C2E869800370F39 /* Build configuration list for PBXNativeTarget "astrodatingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94ABB4ED2C2E869800370F39 /* Debug */,
+				94ABB4EE2C2E869800370F39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94ABB4EF2C2E869800370F39 /* Build configuration list for PBXNativeTarget "astrodatingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94ABB4F02C2E869800370F39 /* Debug */,
+				94ABB4F12C2E869800370F39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 94ABB4BD2C2E869700370F39 /* Project object */;
+}
