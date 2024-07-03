@@ -2,20 +2,26 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Chat App</title>
     <link rel="manifest" href="/manifest.json" />
     <link rel="apple-touch-icon" href="/icon.png" />
     <meta name="theme-color" content="#2E3B4E" />
     <style>
+      html,
+      body {
+        height: calc(100% - 2rem);
+        margin: 0;
+        padding: 1rem;
+      }
       body {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
           "Helvetica Neue", Arial, sans-serif;
         display: flex;
+        font-size: 1rem;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 100vh;
         margin: 0;
         background-color: #f4f7fa;
       }
@@ -39,13 +45,12 @@
       .message {
         margin: 10px 0;
         display: flex;
-        flex-direction: column;
-      }
-      .message.from {
-        align-items: flex-end;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
       }
       .message.to {
-        align-items: flex-start;
+        flex-direction: row-reverse;
       }
       .bubble {
         max-width: 75%;
@@ -62,6 +67,12 @@
         color: black;
         border-bottom-left-radius: 0;
       }
+      .details {
+        font-size: 0.75rem;
+        color: #555;
+        margin-left: 10px;
+        align-self: center;
+      }
       .input-group {
         display: flex;
         gap: 10px;
@@ -72,12 +83,16 @@
         border: 1px solid #ccc;
         border-radius: 10px;
       }
+      .input-group input::placeholder {
+        font-size: 1rem; /* Set font size for placeholder text */
+      }
       .input-group button {
         padding: 10px 20px;
         border: none;
         background-color: #007aff;
         color: white;
         border-radius: 10px;
+        font-size: 1rem;
       }
       .input-group button:disabled {
         background-color: #b0b0b0;
@@ -113,14 +128,36 @@
 
       let socket;
       let username;
+      let messageBuffer = [];
+      let lastPlayed = 0;
+
+      // Automatically connect using the username from localStorage
+      if (localStorage.getItem("from")) {
+        username = localStorage.getItem("from");
+        document.getElementById("username").value = username;
+        if (localStorage.getItem("toUsername")) {
+          toUsername = localStorage.getItem("toUsername");
+          document.getElementById("toUsername").value = toUsername;
+        }
+        connect();
+      }
 
       document
         .getElementById("username")
         .addEventListener("change", (event) => {
+          if (socket) {
+            socket.close();
+          }
           username = event.target.value;
+          localStorage.setItem("from", username);
           connect();
         });
-
+      document
+        .getElementById("toUsername")
+        .addEventListener("change", (event) => {
+          toUsername = event.target.value;
+          localStorage.setItem("toUsername", toUsername);
+        });
       function connect() {
         const encryptedUsername = encryptMessage(username);
         socket = new WebSocket(
@@ -129,16 +166,26 @@
 
         socket.onopen = function () {
           console.log("Connected to WebSocket server");
+          loadMessages(Date.now() - 3600000, Date.now());
+          setTimeout(
+            () => loadMessages(Date.now() - 28800000, Date.now() - 3600000),
+            10000
+          );
+          setTimeout(
+            () => loadMessages(Date.now() - 86400000, Date.now() - 28800000),
+            20000
+          );
         };
 
         socket.onmessage = function (event) {
           const data = JSON.parse(event.data);
-          const from = decryptMessage(data.from);
-          const to = decryptMessage(data.to);
-          const content = decryptMessage(data.msg);
-          const timestamp = data.timestamp;
-          displayMessage(from, content, from === username ? "from" : "to");
-          playSound();
+          if (Array.isArray(data)) {
+            data.forEach((message) => {
+              processMessage(message);
+            });
+          } else {
+            processMessage(data);
+          }
         };
 
         socket.onclose = function () {
@@ -146,8 +193,31 @@
         };
 
         socket.onerror = function (error) {
-          console.log("WebSocket error: " + error);
+          console.log("WebSocket error:", error);
         };
+      }
+
+      function processMessage(data) {
+        try {
+          const from = decryptMessage(data.from);
+          const to = decryptMessage(data.to);
+          const content = decryptMessage(data.msg);
+          const timestamp = data.timestamp;
+
+          // Check if the message already exists in the buffer
+          const messageExists = messageBuffer.some(
+            (msg) =>
+              msg.timestamp === timestamp && msg.from === from && msg.to === to
+          );
+
+          if (!messageExists) {
+            messageBuffer.push({ from, to, content, timestamp });
+            rebuildMessages();
+            // playSound();
+          }
+        } catch (error) {
+          console.error("Decryption error:", error);
+        }
       }
 
       function sendMessage() {
@@ -163,18 +233,57 @@
           };
           socket.send(JSON.stringify(encryptedMessage));
           playSound();
-          displayMessage(username, message, "from");
+          displayMessage(username, message, "from", Date.now());
           document.getElementById("message").value = "";
         }
       }
 
-      function displayMessage(from, message, type) {
+      function displayMessage(from, message, type, timestamp) {
         const messageContainer = document.getElementById("messages");
         const messageElement = document.createElement("div");
         messageElement.className = `message ${type}`;
-        messageElement.innerHTML = `<div class="bubble ${type}">${message}</div>`;
+        const datetime = new Date(timestamp).toLocaleString("en-US", {
+          year: "numeric",
+          month: "2-digit",
+          day: "2-digit",
+          hour: "2-digit",
+          minute: "2-digit",
+          second: "2-digit",
+        });
+        messageElement.innerHTML = `<div class="bubble ${type}">${message}</div><div class="details">${from} - ${datetime}</div>`;
         messageContainer.appendChild(messageElement);
         messageContainer.scrollTop = messageContainer.scrollHeight;
+      }
+
+      function rebuildMessages() {
+        const messageContainer = document.getElementById("messages");
+        messageContainer.innerHTML = ""; // Clear existing messages
+
+        // Sort messages by timestamp
+        messageBuffer.sort((a, b) => a.timestamp - b.timestamp);
+
+        // Display each message
+        messageBuffer.forEach((msg) => {
+          displayMessage(
+            msg.from,
+            msg.content,
+            msg.from === username ? "from" : "to",
+            msg.timestamp
+          );
+        });
+
+        messageContainer.scrollTop = messageContainer.scrollHeight; // Scroll to the latest message
+      }
+
+      function loadMessages(start, end) {
+        if (socket && socket.readyState === WebSocket.OPEN) {
+          const historyRequest = {
+            cmd: "history",
+            from: start,
+            to: end,
+          };
+          socket.send(JSON.stringify(historyRequest));
+        }
       }
 
       function encryptMessage(message) {
@@ -182,17 +291,21 @@
         const encrypted = CryptoJS.AES.encrypt(message, AES_KEY, { iv: iv });
         return iv.concat(encrypted.ciphertext).toString(CryptoJS.enc.Base64);
       }
-
       function decryptMessage(encryptedMessage) {
-        const data = CryptoJS.enc.Base64.parse(encryptedMessage);
-        const iv = CryptoJS.lib.WordArray.create(data.words.slice(0, 4));
-        const ciphertext = CryptoJS.lib.WordArray.create(data.words.slice(4));
-        const decrypted = CryptoJS.AES.decrypt(
-          { ciphertext: ciphertext },
-          AES_KEY,
-          { iv: iv }
-        );
-        return decrypted.toString(CryptoJS.enc.Utf8);
+        try {
+          const data = CryptoJS.enc.Base64.parse(encryptedMessage);
+          const iv = CryptoJS.lib.WordArray.create(data.words.slice(0, 4));
+          const ciphertext = CryptoJS.lib.WordArray.create(data.words.slice(4));
+          const decrypted = CryptoJS.AES.decrypt(
+            { ciphertext: ciphertext },
+            AES_KEY,
+            { iv: iv }
+          );
+          return decrypted.toString(CryptoJS.enc.Utf8);
+        } catch (error) {
+          console.error("Decryption error:", error);
+          return "";
+        }
       }
 
       function playSound() {

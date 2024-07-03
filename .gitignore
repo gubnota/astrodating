@@ -1,3 +1,4 @@
 chat_backend/venv
 .DS_Store
- __pycache__
+*/__pycache__
+chat_backend/__pycache__
