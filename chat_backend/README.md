@@ -7,3 +7,5 @@ uvicorn main:app --reload --host 0.0.0.0
 docker build -t fastapi-chat .
 docker run -d --name fastapi-chat -p 8000:8000 fastapi-chat
 ```
+
+# Step 2
