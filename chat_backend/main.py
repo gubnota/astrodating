@@ -1,15 +1,15 @@
-import threading
+import json
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect, Path
 from fastapi.middleware.cors import CORSMiddleware
-from typing import List, Dict
-import json
+import threading
 from db import (
     ConnectionManager,
     get_message_history,
     save_message,
     cleanup_old_messages,
 )
-from message import encrypt_message, decrypt_message, form_encrypted_message
+from message import decrypt_message, form_encrypted_message
+from users import router as users_router
 
 app = FastAPI()
 
@@ -24,6 +24,8 @@ app.add_middleware(
 )
 
 manager = ConnectionManager()
+
+app.include_router(users_router, prefix="/users")
 
 
 @app.websocket("/astrodating/chat/{encrypted_username:path}")
