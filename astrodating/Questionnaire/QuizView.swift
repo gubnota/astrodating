@@ -13,7 +13,6 @@ struct QuizView<Content: View>: View {
     }
 
     var body: some View {
-        NavigationView { // Wrap your content in a NavigationView
             GeometryReader { geometry in
                 ZStack(alignment: .center) {
                     Rectangle().fill(gradient).ignoresSafeArea()
@@ -44,7 +43,8 @@ struct QuizView<Content: View>: View {
                                     viewModel.currentStep += 1
                                 } else {
                                     // Finish action
-                                    navigateToUserList = true // Trigger navigation
+                                    viewModel.currentRoute = "list"
+//                                    navigateToUserList = true // Trigger navigation
                                     
                                 }
                             }) {
@@ -69,7 +69,6 @@ struct QuizView<Content: View>: View {
                     }
                 }
             }
-        }.navigate(to: UserListView(users: sampleUsers), when: $navigateToUserList)
     }
 }
 

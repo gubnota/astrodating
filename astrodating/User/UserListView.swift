@@ -12,7 +12,6 @@ struct UserListView: View {
     var users: [Person]
     
     var body: some View {
-        NavigationView {
             ScrollView {
                 HStack {
                     Text("Кандидаты").fontWeight(.bold).font(.headline)
@@ -31,9 +30,6 @@ struct UserListView: View {
             }
 //            .navigationTitle("Кандидаты")
 //            .navigationBarItems(leading: Rectangle().opacity(0),trailing: profileButton)
-        }
-        .navigationBarHidden(true) // Hide the navigation bar
-        .navigationBarTitle("", displayMode: .inline) // Set title to empty string
 
     }
     
@@ -76,7 +72,12 @@ struct UserListView: View {
     
     struct UserListView_Previews: PreviewProvider {
         static var previews: some View {
+            NavigationView {
             UserListView(users: sampleUsers)
+            }
+            .navigationViewStyle(StackNavigationViewStyle())// make iPad version to fill up whole area
+            .navigationBarHidden(true) // Hide the navigation bar
+            .navigationBarTitle("", displayMode: .inline) // Set title to empty string
         }
     }
 

@@ -10,7 +10,6 @@ struct QuestionnaireView: View {
     @ObservedObject var viewModel: QuizViewModel
 
     var body: some View {
-        NavigationView {
             VStack {
                 //            switch viewModel.currentStep {
                 //            case 1:
@@ -55,9 +54,6 @@ struct QuestionnaireView: View {
                 }
                 
             }
-        }
-        .navigationBarHidden(true) // Hide the navigation bar
-        .navigationBarTitle("", displayMode: .inline) // Set title to empty string
 
     }
         
@@ -65,6 +61,12 @@ struct QuestionnaireView: View {
 
 struct QuestionnaireView_Previews: PreviewProvider {
     static var previews: some View {
+        NavigationView {
         QuestionnaireView(viewModel: QuizViewModel())
+                .navigationViewStyle(StackNavigationViewStyle())// make iPad version to fill up whole area
+                .navigationBarHidden(true) // Hide the navigation bar
+                .navigationBarTitle("", displayMode: .inline) // Set title to empty string
+            }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }

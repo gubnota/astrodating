@@ -11,10 +11,11 @@ import SwiftUI
 struct RegisterView: View {
     @State private var username: String = ""
     @State private var password: String = ""
-    @State private var isQuestionnaireStarted = false
-
+    @ObservedObject var viewModel: QuizViewModel
+    
     var body: some View {
         VStack {
+            Spacer()
             Text("Регистрация")
                 .font(.largeTitle)
                 .padding()
@@ -24,10 +25,8 @@ struct RegisterView: View {
 
             SecureField("Пароль", text: $password)
                 .styledTextField()
-            Spacer()
             Button(action: {
-                // Implement registration logic here
-                isQuestionnaireStarted = true
+                viewModel.currentRoute = "questionnaire"
             }) {
                 Text("След")
                     .font(.headline)
@@ -38,13 +37,22 @@ struct RegisterView: View {
                     .foregroundColor(.white)
                     .cornerRadius(10)
             }
+            Spacer()
         }
         .padding()
-        .navigate(to: QuestionnaireView(viewModel: QuizViewModel()), when: $isQuestionnaireStarted)
+//        .navigate(to: QuestionnaireView(viewModel: QuizViewModel()), when: $isQuestionnaireStarted)
     }
 }
 struct RegisterView_Previews: PreviewProvider {
     static var previews: some View {
-        RegisterView()//viewModel: QuizViewModel()
+        EntryView(viewModel: QuizViewModel.init(properties: ["currentRoute":"register"]) )//QuestionnaireView(viewModel: QuizViewModel())//LoginView()//ContentView
     }
+//        NavigationView {
+//
+//        RegisterView(viewModel: QuizViewModel())
+//        }
+//        .navigationViewStyle(StackNavigationViewStyle())// make iPad version to fill up whole area
+//        .navigationBarHidden(true) // Hide the navigation bar
+//        .navigationBarTitle("", displayMode: .inline) // Set title to empty string
+//    }
 }

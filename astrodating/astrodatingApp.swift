@@ -14,6 +14,7 @@ struct astrodatingApp: App {
     var body: some Scene {
         WindowGroup {
            EntryView(viewModel: QuizViewModel())//QuestionnaireView(viewModel: QuizViewModel())//LoginView()//ContentView
+                .edgesIgnoringSafeArea(.all) 
         }
     }
 }

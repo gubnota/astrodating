@@ -23,6 +23,8 @@ extension QuizViewModel {
                 switch key {
                 case "currentStep":
                     self.currentStep = value as? Int ?? 1
+                case "currentRoute":
+                    self.currentRoute = value as? String ?? ""
                 case "name":
                     self.name = value as? String ?? ""
                 case "surname":

@@ -20,9 +20,11 @@ struct EntryView: View {
                         ChatView(person: person)
                     }
                 case "register":
-                    RegisterView()
+                    RegisterView(viewModel: viewModel)
                 case "profile":
                     ProfileView(viewModel: viewModel)
+                case "questionnaire":
+                    QuestionnaireView(viewModel: viewModel)
                 case "detail":
                     if let person = sampleUsers.first { // Assuming you want to show details of the first person for demo purposes
                         PersonDetailView(person: person)
@@ -31,9 +33,9 @@ struct EntryView: View {
                     LoginView(viewModel: viewModel)
                 }
             }
+            .edgesIgnoringSafeArea(.all) // Extend to the edges of the screen
         }
-//        .navigationBarHidden(true) // Hide the navigation bar
-//        .navigationBarTitle("", displayMode: .inline) // Set title to empty string
+        .navigationViewStyle(StackNavigationViewStyle())// make iPad version to fill up whole area
         .onAppear {
             viewModel.deserializeFromJson()
         }
