@@ -11,7 +11,7 @@ import SwiftUI
 struct astrodatingApp: App {
     var body: some Scene {
         WindowGroup {
-            QuestionnaireView(viewModel: QuizViewModel())//LoginView()//ContentView
+            LoginView()//QuestionnaireView(viewModel: QuizViewModel())//LoginView()//ContentView
         }
     }
 }

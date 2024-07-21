@@ -30,7 +30,7 @@ struct Part1View: View {
 
                 Spacer().frame(height: 50)
             }
-            .padding(.horizontal)
+//            .padding(.horizontal)
         }
     }
 }

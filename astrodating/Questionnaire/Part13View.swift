@@ -20,9 +20,7 @@ struct Part13View: View {
                 .styledPicker()
 
                 Spacer().frame(height: 50)
-            }
-            .padding(.horizontal)
-        }
+            }        }
     }
 }
 

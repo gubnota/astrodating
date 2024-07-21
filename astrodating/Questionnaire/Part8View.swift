@@ -21,7 +21,7 @@ struct Part8View: View {
 
                 Spacer().frame(height: 50)
             }
-            .padding(.horizontal)
+//            .padding(.horizontal)
         }
     }
 }

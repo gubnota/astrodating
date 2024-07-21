@@ -20,7 +20,6 @@ struct Part14View: View {
 
                 Spacer().frame(height: 50)
             }
-            .padding(.horizontal)
         }
     }
 }

@@ -13,7 +13,9 @@ struct Part7View: View {
 
                 TextField("Запросы и пожелания", text: $viewModel.assistance)
                     .styledTextField()
-                
+                Text("\(viewModel.ageRange.lowerBound) – \(viewModel.ageRange.upperBound)")
+                     .font(.largeTitle)
+                     .bold()
                 Text("Желаемый возраст партнера")
                     .font(.headline)
                 

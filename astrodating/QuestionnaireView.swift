@@ -56,7 +56,11 @@ struct QuestionnaireView: View {
                 
             }
         }
+        .navigationBarHidden(true) // Hide the navigation bar
+        .navigationBarTitle("", displayMode: .inline) // Set title to empty string
+
     }
+        
 }
 
 struct QuestionnaireView_Previews: PreviewProvider {

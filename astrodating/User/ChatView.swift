@@ -38,7 +38,7 @@ struct ChatView: View {
                 }) {
                     Text("Отправить")
                         .padding()
-                        .background(Color.black)
+                        .background(Color.blue)
                         .foregroundColor(.white)
                         .cornerRadius(10)
                 }

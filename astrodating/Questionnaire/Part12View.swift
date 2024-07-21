@@ -41,9 +41,8 @@ struct Part12View: View {
                         }
                     }
                 }
-                .padding()
+//                .padding()
             }
-            .padding(.horizontal)
         }
     }
 }

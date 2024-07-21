@@ -10,9 +10,9 @@ struct PersonDetailView: View {
                 .scaledToFit()
                 .frame(height: 300)
                 .clipShape(Circle())
-                .overlay(Circle().stroke(Color.white, lineWidth: 4))
-                .shadow(radius: 10)
+                .overlay(Circle().stroke(Color(hex: "#FD80C3"), lineWidth: 6))
                 .padding()
+            Spacer()
 
             Text(person.name)
                 .font(.largeTitle)
@@ -24,7 +24,6 @@ struct PersonDetailView: View {
             Text("Регион: \(person.region)")
             Text("Язык любви: \(person.loveLanguage)")
 
-            Spacer()
 
             NavigationLink(destination: ChatView(person: person)) {
                 Text("Чат")
@@ -32,7 +31,7 @@ struct PersonDetailView: View {
                     .foregroundColor(.white)
                     .frame(minWidth: 0, maxWidth: .infinity)
                     .padding()
-                    .background(Color.blue)
+                    .background(Color.black)
                     .cornerRadius(10)
             }
             .padding()

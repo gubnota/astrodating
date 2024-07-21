@@ -15,24 +15,12 @@ struct ProfileView: View {
                     .font(.largeTitle)
                     .bold()
                     .padding(.top)
-
-//                if let profileImage = "john_smith" {//viewModel.profileImage
                     Image("john_smith")
                         .resizable()
                         .scaledToFit()
                         .frame(width: 150, height: 150)
                         .clipShape(Circle())
                         .overlay(Circle().stroke(Color(hex: "#FD80C3"), lineWidth: 6))
-//                        .shadow(radius: 10)
-//                } else {
-//                    Image(systemName: "person.crop.circle.fill")
-//                        .resizable()
-//                        .scaledToFit()
-//                        .frame(width: 150, height: 150)
-//                        .foregroundColor(.gray)
-//                        .overlay(Circle().stroke(Color.white, lineWidth: 4))
-//                        .shadow(radius: 10)
-//                }
 
                 VStack(alignment: .leading, spacing: 10) {
                     HStack {

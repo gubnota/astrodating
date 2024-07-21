@@ -15,17 +15,17 @@ struct Part9View: View {
                 TextEditor(text: $viewModel.selfIntro)
                     .frame(height: 200)
                     .padding()
-                    .background(Color.gray.opacity(0.2))
+//                    .background(Color.gray.opacity(0.2))
                     .overlay(
                         RoundedRectangle(cornerRadius: 4)
-                            .stroke(Color(hex: "#FD80C3"), lineWidth: 2)
+                            .stroke(Color(hex: "#FD80C3"), lineWidth: 4)
                     )
-                    .cornerRadius(4)
-                    .padding(.bottom, 10)
+//                    .cornerRadius(6)
+//                    .padding(.bottom, 10)
 
                 Spacer().frame(height: 50)
             }
-            .padding(.horizontal)
+//            .padding(.horizontal)
         }
     }
 }
