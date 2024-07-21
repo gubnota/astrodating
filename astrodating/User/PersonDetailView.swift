@@ -19,11 +19,25 @@ struct PersonDetailView: View {
                 .fontWeight(.bold)
                 .padding(.top)
 
-            Text("Астрологический знак: \(person.astrologicalSign)")
-            Text("Китайский зодиак: \(person.chineseZodiac)")
-            Text("Регион: \(person.region)")
-            Text("Язык любви: \(person.loveLanguage)")
-
+            VStack {
+                ForEach([
+                    ("Астрологический знак:", person.astrologicalSign),
+                    ("Китайский зодиак:", person.chineseZodiac),
+                    ("Регион:", person.region),
+                    ("Язык любви:", person.loveLanguage)
+                ], id: \.0) { item in
+                    HStack {
+                        Text(item.0)
+                            .font(.headline)
+                            .fontWeight(.bold)
+                        Spacer()
+                        Text(item.1)
+                            .font(.body)
+                    }
+                    Spacer()
+                }
+            }
+            .padding()
 
             NavigationLink(destination: ChatView(person: person)) {
                 Text("Чат")
@@ -44,7 +58,6 @@ struct PersonDetailView: View {
 
 struct PersonDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        let samplePerson = Person(name: "Иван Кублаханов", imageName: "john_smith", astrologicalSign: "Овен", chineseZodiac: "Дракон", region: "Нижний Новгород", loveLanguage: "Время")
         PersonDetailView(person: samplePerson)
     }
 }

@@ -1,67 +1,63 @@
 import SwiftUI
 
 struct LoginView: View {
-    @State private var username: String = ""
-    @State private var password: String = ""
+    @State private var username: String = "123"
+    @State private var password: String = "admin"
     @State private var showAlert = false
-    @State private var isLoggedIn = false
-    @State private var isRegistering = false
+    @ObservedObject var viewModel: QuizViewModel
 
     var body: some View {
-        NavigationView {
-            VStack {
-                Text("Вход")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                    .padding()
-
-                TextField("Имя пользователя", text: $username)
-                    .styledTextField()
-                
-                SecureField("Пароль", text: $password)
-                    .styledTextField()
-
-                Button(action: {
-                    if username == "123" && password == "admin" {
-                        isLoggedIn = true
-                    } else {
-                        showAlert = true
-                    }
-                }) {
-                    Text("Вход")
-                        .foregroundColor(.white)
-                        .fontWeight(.bold)
-                        .frame(minWidth: 0, maxWidth: .infinity)
-                        .padding()
-                        .background(Color(hex: "#FD80C3"))
-                        .foregroundColor(.white)
-                        .cornerRadius(10)
-                }
-                .alert(isPresented: $showAlert) {
-                    Alert(title: Text("Неверные логин/пароль!"), message: Text("Имя пользователя или пароль неверны"), dismissButton: .default(Text("OK")))
-                }
-
-                NavigationLink(destination: RegisterView(), isActive: $isRegistering) {
-                    Button("Регистрация") {
-                        isRegistering = true
-                    }
-                }
-                .foregroundColor(.white)
-                .frame(minWidth: 0, maxWidth: .infinity)
+        VStack {
+            Text("Вход")
+                .font(.largeTitle)
+                .fontWeight(.bold)
                 .padding()
-                .background(Color(hex: "#05B5CD"))
-                .foregroundColor(.white)
-                .cornerRadius(10)
+
+            TextField("Имя пользователя", text: $username)
+                .styledTextField()
+            
+            SecureField("Пароль", text: $password)
+                .styledTextField()
+
+            Button(action: {
+                if username == "123" && password == "admin" {
+                    viewModel.currentRoute = "list"
+                } else {
+                    showAlert = true
+                }
+            }) {
+                Text("Вход")
+                    .foregroundColor(.white)
+                    .fontWeight(.bold)
+                    .frame(minWidth: 0, maxWidth: .infinity)
+                    .padding()
+                    .background(Color(hex: "#FD80C3"))
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
             }
+            .alert(isPresented: $showAlert) {
+                Alert(title: Text("Неверные логин/пароль!"), message: Text("Имя пользователя или пароль неверны"), dismissButton: .default(Text("OK")))
+            }
+
+            Rectangle().frame(height: 10).opacity(0)
+
+            Button("Регистрация") {
+                viewModel.currentRoute = "register"
+            }
+            .foregroundColor(.white)
+            .frame(minWidth: 0, maxWidth: .infinity)
             .padding()
-            .navigationBarHidden(true)
+            .background(Color(hex: "#05B5CD"))
+            .foregroundColor(.white)
+            .cornerRadius(10)
         }
-        .navigate(to: QuestionnaireView(viewModel: QuizViewModel()), when: $isLoggedIn)
+        .padding()
+        .dismissKeyboardOnTap()
     }
 }
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
+        LoginView(viewModel: QuizViewModel())
     }
 }

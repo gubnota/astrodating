@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct astrodatingApp: App {
+    @StateObject private var viewModel = EntryViewModel()
+
     var body: some Scene {
         WindowGroup {
-            LoginView()//QuestionnaireView(viewModel: QuizViewModel())//LoginView()//ContentView
+           EntryView(viewModel: QuizViewModel())//QuestionnaireView(viewModel: QuizViewModel())//LoginView()//ContentView
         }
     }
 }

@@ -29,14 +29,12 @@ struct UserListView: View {
                 }
                 .padding()
             }
-            .navigationBarHidden(true) // Hide the navigation bar
-            .navigationBarTitle("", displayMode: .inline) // Set title to empty string
 //            .navigationTitle("Кандидаты")
 //            .navigationBarItems(leading: Rectangle().opacity(0),trailing: profileButton)
-            
-            
         }
-        
+        .navigationBarHidden(true) // Hide the navigation bar
+        .navigationBarTitle("", displayMode: .inline) // Set title to empty string
+
     }
     
     private var profileButton: some View {

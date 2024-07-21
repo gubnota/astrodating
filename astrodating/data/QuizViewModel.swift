@@ -7,6 +7,7 @@ struct EnumItem: Identifiable, Decodable {
 }
 
 class QuizViewModel: ObservableObject, Codable {//, Encodable, Decodable
+    @Published var currentRoute: String = "" // current Route
     @Published var currentStep: Int = 1
     @Published var name: String = ""
     @Published var surname: String = ""
