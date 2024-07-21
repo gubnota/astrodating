@@ -1,51 +1,62 @@
 import SwiftUI
 
 struct Part4View: View {
-    @State private var selectedLoveLanguage = ""
+    @ObservedObject var viewModel: QuizViewModel
+    @State private var showDetail = false
 
     var body: some View {
-        VStack {
-            Text("Select your main love language")
-                .font(.title2)
-                .padding()
+        QuizView(viewModel: viewModel) {
+            VStack {
+                Text("Выберите основные языки любви")
+                    .font(.title)
+                    .lineLimit(3)
+                    .padding()
 
-            Picker("Love Language", selection: $selectedLoveLanguage) {
-                ForEach(loveLanguages, id: \.self) { language in
-                    Text(language)
+                Picker("Первый язык любви", selection: $viewModel.loveLanguage1) {
+                    ForEach(viewModel.loveLanguages) { language in
+                        Text(language.name).tag(language.id)
+                    }
                 }
-            }
-            .pickerStyle(SegmentedPickerStyle())
-            .padding()
+                .styledPicker()
 
-            NavigationLink(destination: ContentView()) {
-                Text("Show Initial Content")
-                    .frame(minWidth: 0, maxWidth: .infinity)
-                    .padding()
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
-            }
-            .padding()
+                Picker("Второй язык любви", selection: $viewModel.loveLanguage2) {
+                    ForEach(viewModel.loveLanguages) { language in
+                        Text(language.name).tag(language.id)
+                    }
+                }
+                .styledPicker()
+                Spacer().frame(height: 50)
+                Button (action: {showDetail.toggle()}) {
+                    Text("Что такое языки любви?")
+                        .fontWeight(.bold)
+                        .frame(minWidth: 0, maxWidth: .infinity)
+                        .padding()
+                        .background(Color(hex: "#FD80C3"))
+                        .foregroundColor(.black)
+                        
+                        .cornerRadius(10)
+                }
 
-            NavigationLink(destination: Part5View()) {
-                Text("Next")
-                    .frame(minWidth: 0, maxWidth: .infinity)
-                    .padding()
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
+                if showDetail {
+                    NavigationLink(destination: ContentView(), isActive: $showDetail) {
+                        EmptyView()
+                    }
+                    .hidden()
+                }
+//                    NavigationLink {
+//                    ContentView()
+//                } label: {
+//                    Text("Что такое языки любви?").fontWeight(.bold).foregroundColor(.black)
+//                }
+
             }
-            .padding()
+            .padding(.horizontal)
         }
-        .navigationTitle("Part 4")
-        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
-let loveLanguages = ["Approval", "Time", "Help", "Presents"]
-
 struct Part4View_Previews: PreviewProvider {
     static var previews: some View {
-        Part4View()
+        Part4View(viewModel: QuizViewModel())
     }
 }

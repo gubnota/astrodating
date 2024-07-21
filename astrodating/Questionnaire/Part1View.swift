@@ -1,47 +1,42 @@
-//
-//  Part1View.swift
-//  astrodating
-//
-//  Created by Vladislav Muravyev on 03-07-2024.
-//
-
-
 import SwiftUI
 
 struct Part1View: View {
-    @Binding var name: String
-    @Binding var surname: String
-    @Binding var gender: String
-    @Binding var region: String
+    @ObservedObject var viewModel: QuizViewModel
 
     var body: some View {
-        VStack {
-            Text("Part 1")
-                .font(.largeTitle)
-                .padding()
+        QuizView(viewModel: viewModel) {
+            VStack {
 
-            TextField("Name", text: $name)
-                .padding()
-                .background(Color.gray.opacity(0.2))
-                .cornerRadius(5.0)
+                TextField("Имя", text: $viewModel.name)
+                    .styledTextField()
 
-            TextField("Surname", text: $surname)
-                .padding()
-                .background(Color.gray.opacity(0.2))
-                .cornerRadius(5.0)
+                TextField("Фамилия", text: $viewModel.surname)
+                    .styledTextField()
 
-            Picker("Gender", selection: $gender) {
-                Text("Male").tag("Male")
-                Text("Female").tag("Female")
-                Text("Other").tag("Other")
+                Picker("Пол", selection: $viewModel.gender) {
+                    Text("Мужской").tag(1)
+                    Text("Женский").tag(2)
+                }
+                .styledPicker()
+
+//                RegionSelectorView(viewModel: viewModel)
+//                    .padding()
+                Picker("Регион", selection: $viewModel.region) {
+                    ForEach(viewModel.regions, id: \.id) { region in
+                        Text(region.name).tag(region.id)
+                    }
+                }
+                .styledPicker()
+
+                Spacer().frame(height: 50)
             }
-            .pickerStyle(SegmentedPickerStyle())
-            .padding()
-
-            TextField("Region", text: $region)
-                .padding()
-                .background(Color.gray.opacity(0.2))
-                .cornerRadius(5.0)
+            .padding(.horizontal)
         }
+    }
+}
+
+struct Part1View_Previews: PreviewProvider {
+    static var previews: some View {
+        Part1View(viewModel: QuizViewModel())
     }
 }

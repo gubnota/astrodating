@@ -27,16 +27,18 @@ struct ChatView: View {
             .padding()
 
             HStack {
-                TextField("Enter message...", text: $messageText)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .padding(.horizontal)
+                TextField("Введите сообщение…", text: $messageText)
+                    .styledTextField()
+//                    .textFieldStyle(RoundedBorderTextFieldStyle())
+//                    .padding(.horizontal)
+                    
 
                 Button(action: {
                     sendMessage()
                 }) {
-                    Text("Send")
+                    Text("Отправить")
                         .padding()
-                        .background(Color.blue)
+                        .background(Color.black)
                         .foregroundColor(.white)
                         .cornerRadius(10)
                 }
@@ -44,7 +46,7 @@ struct ChatView: View {
             }
             .padding()
         }
-        .navigationTitle("Chat with \(person.name)")
+        .navigationTitle("Начать диалог с \(person.name)")
         .navigationBarTitleDisplayMode(.inline)
     }
 

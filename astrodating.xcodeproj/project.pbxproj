@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9491406D2C4C469400622956 /* dismissKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9491406C2C4C469000622956 /* dismissKeyboard.swift */; };
+		949140762C4C47BA00622956 /* maritalStatus.json in Resources */ = {isa = PBXBuildFile; fileRef = 949140732C4C47BA00622956 /* maritalStatus.json */; };
+		949140772C4C47BA00622956 /* regions.json in Resources */ = {isa = PBXBuildFile; fileRef = 949140752C4C47BA00622956 /* regions.json */; };
+		949140782C4C47BA00622956 /* chineseZodiacs.json in Resources */ = {isa = PBXBuildFile; fileRef = 949140702C4C47BA00622956 /* chineseZodiacs.json */; };
+		949140792C4C47BA00622956 /* badHabits.json in Resources */ = {isa = PBXBuildFile; fileRef = 9491406F2C4C47BA00622956 /* badHabits.json */; };
+		9491407A2C4C47BA00622956 /* hasChildren.json in Resources */ = {isa = PBXBuildFile; fileRef = 949140712C4C47BA00622956 /* hasChildren.json */; };
+		9491407B2C4C47BA00622956 /* loveLanguages.json in Resources */ = {isa = PBXBuildFile; fileRef = 949140722C4C47BA00622956 /* loveLanguages.json */; };
+		9491407C2C4C47BA00622956 /* partnerMethod.json in Resources */ = {isa = PBXBuildFile; fileRef = 949140742C4C47BA00622956 /* partnerMethod.json */; };
+		9491407D2C4C47BA00622956 /* astroSigns.json in Resources */ = {isa = PBXBuildFile; fileRef = 9491406E2C4C47BA00622956 /* astroSigns.json */; };
+		949140812C4C54DF00622956 /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949140802C4C54DC00622956 /* PhotoPicker.swift */; };
+		9492178E2C4C2E8A009C1DCE /* RegionSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9492178D2C4C2E87009C1DCE /* RegionSelectorView.swift */; };
+		9498EE732C4D0A7900B7B542 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9498EE722C4D0A7600B7B542 /* ProfileView.swift */; };
 		94ABB4C92C2E869700370F39 /* astrodatingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94ABB4C82C2E869700370F39 /* astrodatingApp.swift */; };
 		94ABB4CB2C2E869700370F39 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94ABB4CA2C2E869700370F39 /* ContentView.swift */; };
 		94ABB4CD2C2E869800370F39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94ABB4CC2C2E869800370F39 /* Assets.xcassets */; };
@@ -19,6 +31,15 @@
 		94ABB4F92C2E898500370F39 /* SDWebImageWebPCoder in Frameworks */ = {isa = PBXBuildFile; productRef = 94ABB4F82C2E898500370F39 /* SDWebImageWebPCoder */; };
 		94ABB4FC2C2E905000370F39 /* Info2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 94ABB4FB2C2E905000370F39 /* Info2.plist */; };
 		94ABB4FE2C2E957A00370F39 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94ABB4FD2C2E957A00370F39 /* Slide.swift */; };
+		94CAE67F2C4CECE40024FB85 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CAE67E2C4CECE00024FB85 /* GradientView.swift */; };
+		94EC07692C4BE7F5003B61E0 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EC07682C4BE7F1003B61E0 /* QuizView.swift */; };
+		94EC076B2C4BE8B8003B61E0 /* QuizViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EC076A2C4BE8B4003B61E0 /* QuizViewModel.swift */; };
+		94EC076D2C4BE927003B61E0 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EC076C2C4BE925003B61E0 /* Font.swift */; };
+		94EC076F2C4BEE34003B61E0 /* PatternBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EC076E2C4BEE33003B61E0 /* PatternBackgroundView.swift */; };
+		94EC07712C4BEE92003B61E0 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EC07702C4BEE90003B61E0 /* Color.swift */; };
+		94EC07742C4BF540003B61E0 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EC07732C4BF53D003B61E0 /* TextField.swift */; };
+		94EC07762C4BF69F003B61E0 /* Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EC07752C4BF69C003B61E0 /* Picker.swift */; };
+		94EC07782C4BF9B5003B61E0 /* DatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EC07772C4BF9B2003B61E0 /* DatePicker.swift */; };
 		94FF61952C35D8B500BAA3B2 /* QuestionnaireView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FF61942C35D8B500BAA3B2 /* QuestionnaireView.swift */; };
 		94FF61982C35D8F100BAA3B2 /* Part1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FF61972C35D8F100BAA3B2 /* Part1View.swift */; };
 		94FF619A2C35D8FB00BAA3B2 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FF61992C35D8FB00BAA3B2 /* ListView.swift */; };
@@ -39,7 +60,6 @@
 		94FF61BD2C35DB2B00BAA3B2 /* Part13View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FF61BC2C35DB2B00BAA3B2 /* Part13View.swift */; };
 		94FF61BF2C35DB3300BAA3B2 /* Part14View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FF61BE2C35DB3300BAA3B2 /* Part14View.swift */; };
 		94FF61C12C35DB3800BAA3B2 /* Part15View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FF61C02C35DB3800BAA3B2 /* Part15View.swift */; };
-		94FF61C32C35DC8200BAA3B2 /* Part16View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FF61C22C35DC8200BAA3B2 /* Part16View.swift */; };
 		94FF61C52C35DC9700BAA3B2 /* Part9View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FF61C42C35DC9700BAA3B2 /* Part9View.swift */; };
 		94FF61C72C35DCA900BAA3B2 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FF61C62C35DCA900BAA3B2 /* UserListView.swift */; };
 		94FF61C92C35DCAF00BAA3B2 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FF61C82C35DCAF00BAA3B2 /* ChatView.swift */; };
@@ -64,6 +84,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9491406C2C4C469000622956 /* dismissKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dismissKeyboard.swift; sourceTree = "<group>"; };
+		9491406E2C4C47BA00622956 /* astroSigns.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = astroSigns.json; sourceTree = "<group>"; };
+		9491406F2C4C47BA00622956 /* badHabits.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = badHabits.json; sourceTree = "<group>"; };
+		949140702C4C47BA00622956 /* chineseZodiacs.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = chineseZodiacs.json; sourceTree = "<group>"; };
+		949140712C4C47BA00622956 /* hasChildren.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = hasChildren.json; sourceTree = "<group>"; };
+		949140722C4C47BA00622956 /* loveLanguages.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = loveLanguages.json; sourceTree = "<group>"; };
+		949140732C4C47BA00622956 /* maritalStatus.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = maritalStatus.json; sourceTree = "<group>"; };
+		949140742C4C47BA00622956 /* partnerMethod.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = partnerMethod.json; sourceTree = "<group>"; };
+		949140752C4C47BA00622956 /* regions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = regions.json; sourceTree = "<group>"; };
+		949140802C4C54DC00622956 /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
+		9492178D2C4C2E87009C1DCE /* RegionSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionSelectorView.swift; sourceTree = "<group>"; };
+		9498EE722C4D0A7600B7B542 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		94ABB4C52C2E869700370F39 /* astrodating.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = astrodating.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94ABB4C82C2E869700370F39 /* astrodatingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = astrodatingApp.swift; sourceTree = "<group>"; };
 		94ABB4CA2C2E869700370F39 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -76,6 +108,15 @@
 		94ABB4E52C2E869800370F39 /* astrodatingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = astrodatingUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		94ABB4FB2C2E905000370F39 /* Info2.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info2.plist; sourceTree = "<group>"; };
 		94ABB4FD2C2E957A00370F39 /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
+		94CAE67E2C4CECE00024FB85 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		94EC07682C4BE7F1003B61E0 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		94EC076A2C4BE8B4003B61E0 /* QuizViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewModel.swift; sourceTree = "<group>"; };
+		94EC076C2C4BE925003B61E0 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		94EC076E2C4BEE33003B61E0 /* PatternBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternBackgroundView.swift; sourceTree = "<group>"; };
+		94EC07702C4BEE90003B61E0 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		94EC07732C4BF53D003B61E0 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		94EC07752C4BF69C003B61E0 /* Picker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picker.swift; sourceTree = "<group>"; };
+		94EC07772C4BF9B2003B61E0 /* DatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePicker.swift; sourceTree = "<group>"; };
 		94FF61942C35D8B500BAA3B2 /* QuestionnaireView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionnaireView.swift; sourceTree = "<group>"; };
 		94FF61972C35D8F100BAA3B2 /* Part1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part1View.swift; sourceTree = "<group>"; };
 		94FF61992C35D8FB00BAA3B2 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
@@ -96,7 +137,6 @@
 		94FF61BC2C35DB2B00BAA3B2 /* Part13View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part13View.swift; sourceTree = "<group>"; };
 		94FF61BE2C35DB3300BAA3B2 /* Part14View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part14View.swift; sourceTree = "<group>"; };
 		94FF61C02C35DB3800BAA3B2 /* Part15View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part15View.swift; sourceTree = "<group>"; };
-		94FF61C22C35DC8200BAA3B2 /* Part16View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part16View.swift; sourceTree = "<group>"; };
 		94FF61C42C35DC9700BAA3B2 /* Part9View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part9View.swift; sourceTree = "<group>"; };
 		94FF61C62C35DCA900BAA3B2 /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
 		94FF61C82C35DCAF00BAA3B2 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
@@ -155,6 +195,8 @@
 		94ABB4C72C2E869700370F39 /* astrodating */ = {
 			isa = PBXGroup;
 			children = (
+				94EC07792C4C0354003B61E0 /* data */,
+				94EC07722C4BF52F003B61E0 /* UI */,
 				94FF619B2C35D90600BAA3B2 /* User */,
 				94FF61962C35D8E900BAA3B2 /* Questionnaire */,
 				94ABB4C82C2E869700370F39 /* astrodatingApp.swift */,
@@ -192,28 +234,61 @@
 			path = astrodatingUITests;
 			sourceTree = "<group>";
 		};
+		94EC07722C4BF52F003B61E0 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				94CAE67E2C4CECE00024FB85 /* GradientView.swift */,
+				9491406C2C4C469000622956 /* dismissKeyboard.swift */,
+				9492178D2C4C2E87009C1DCE /* RegionSelectorView.swift */,
+				94EC07772C4BF9B2003B61E0 /* DatePicker.swift */,
+				94EC07732C4BF53D003B61E0 /* TextField.swift */,
+				94EC07752C4BF69C003B61E0 /* Picker.swift */,
+				94EC07702C4BEE90003B61E0 /* Color.swift */,
+				94EC076E2C4BEE33003B61E0 /* PatternBackgroundView.swift */,
+				94EC076C2C4BE925003B61E0 /* Font.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		94EC07792C4C0354003B61E0 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				9491406E2C4C47BA00622956 /* astroSigns.json */,
+				9491406F2C4C47BA00622956 /* badHabits.json */,
+				949140702C4C47BA00622956 /* chineseZodiacs.json */,
+				949140712C4C47BA00622956 /* hasChildren.json */,
+				949140722C4C47BA00622956 /* loveLanguages.json */,
+				949140732C4C47BA00622956 /* maritalStatus.json */,
+				949140742C4C47BA00622956 /* partnerMethod.json */,
+				949140752C4C47BA00622956 /* regions.json */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
 		94FF61962C35D8E900BAA3B2 /* Questionnaire */ = {
 			isa = PBXGroup;
 			children = (
-				94FF61C42C35DC9700BAA3B2 /* Part9View.swift */,
-				94FF61C22C35DC8200BAA3B2 /* Part16View.swift */,
-				94FF61C02C35DB3800BAA3B2 /* Part15View.swift */,
-				94FF61BE2C35DB3300BAA3B2 /* Part14View.swift */,
-				94FF61BC2C35DB2B00BAA3B2 /* Part13View.swift */,
-				94FF61BA2C35DB2700BAA3B2 /* Part12View.swift */,
-				94FF61B82C35DB2200BAA3B2 /* Part11View.swift */,
-				94FF61B62C35DB1D00BAA3B2 /* Part10View.swift */,
-				94FF61B42C35DAD400BAA3B2 /* Part8View.swift */,
-				94FF61B22C35DA9300BAA3B2 /* Part7View.swift */,
-				94FF61B02C35DA8300BAA3B2 /* Part6View.swift */,
-				94FF61AE2C35DA7C00BAA3B2 /* Part5View.swift */,
-				94FF61AA2C35DA5F00BAA3B2 /* Part3View.swift */,
+				949140802C4C54DC00622956 /* PhotoPicker.swift */,
+				94EC076A2C4BE8B4003B61E0 /* QuizViewModel.swift */,
+				94EC07682C4BE7F1003B61E0 /* QuizView.swift */,
+				94FF61972C35D8F100BAA3B2 /* Part1View.swift */,
 				94FF61A82C35DA5900BAA3B2 /* Part2View.swift */,
+				94FF61AA2C35DA5F00BAA3B2 /* Part3View.swift */,
 				94FF61AC2C35DA6A00BAA3B2 /* Part4View.swift */,
+				94FF61AE2C35DA7C00BAA3B2 /* Part5View.swift */,
+				94FF61B02C35DA8300BAA3B2 /* Part6View.swift */,
+				94FF61B22C35DA9300BAA3B2 /* Part7View.swift */,
+				94FF61B42C35DAD400BAA3B2 /* Part8View.swift */,
+				94FF61C42C35DC9700BAA3B2 /* Part9View.swift */,
+				94FF61B62C35DB1D00BAA3B2 /* Part10View.swift */,
+				94FF61B82C35DB2200BAA3B2 /* Part11View.swift */,
+				94FF61BA2C35DB2700BAA3B2 /* Part12View.swift */,
+				94FF61BC2C35DB2B00BAA3B2 /* Part13View.swift */,
+				94FF61BE2C35DB3300BAA3B2 /* Part14View.swift */,
+				94FF61C02C35DB3800BAA3B2 /* Part15View.swift */,
 				94FF61A22C35D97000BAA3B2 /* Person.swift */,
 				94FF61A02C35D91C00BAA3B2 /* PersonDetailView.swift */,
 				94FF61992C35D8FB00BAA3B2 /* ListView.swift */,
-				94FF61972C35D8F100BAA3B2 /* Part1View.swift */,
 			);
 			path = Questionnaire;
 			sourceTree = "<group>";
@@ -221,11 +296,12 @@
 		94FF619B2C35D90600BAA3B2 /* User */ = {
 			isa = PBXGroup;
 			children = (
-				94FF61CA2C35DF0A00BAA3B2 /* NavigationLinkModifier.swift */,
-				94FF61C82C35DCAF00BAA3B2 /* ChatView.swift */,
-				94FF61C62C35DCA900BAA3B2 /* UserListView.swift */,
+				9498EE722C4D0A7600B7B542 /* ProfileView.swift */,
 				94FF619E2C35D91000BAA3B2 /* LoginView.swift */,
 				94FF619C2C35D90A00BAA3B2 /* RegisterView.swift */,
+				94FF61C62C35DCA900BAA3B2 /* UserListView.swift */,
+				94FF61CA2C35DF0A00BAA3B2 /* NavigationLinkModifier.swift */,
+				94FF61C82C35DCAF00BAA3B2 /* ChatView.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -344,6 +420,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				94ABB4D02C2E869800370F39 /* Preview Assets.xcassets in Resources */,
+				949140762C4C47BA00622956 /* maritalStatus.json in Resources */,
+				949140772C4C47BA00622956 /* regions.json in Resources */,
+				949140782C4C47BA00622956 /* chineseZodiacs.json in Resources */,
+				949140792C4C47BA00622956 /* badHabits.json in Resources */,
+				9491407A2C4C47BA00622956 /* hasChildren.json in Resources */,
+				9491407B2C4C47BA00622956 /* loveLanguages.json in Resources */,
+				9491407C2C4C47BA00622956 /* partnerMethod.json in Resources */,
+				9491407D2C4C47BA00622956 /* astroSigns.json in Resources */,
 				94ABB4CD2C2E869800370F39 /* Assets.xcassets in Resources */,
 				94ABB4FC2C2E905000370F39 /* Info2.plist in Resources */,
 			);
@@ -372,10 +456,13 @@
 			files = (
 				94FF61AD2C35DA6A00BAA3B2 /* Part4View.swift in Sources */,
 				94FF61A32C35D97000BAA3B2 /* Person.swift in Sources */,
+				94EC07712C4BEE92003B61E0 /* Color.swift in Sources */,
 				94FF61BF2C35DB3300BAA3B2 /* Part14View.swift in Sources */,
+				94EC076B2C4BE8B8003B61E0 /* QuizViewModel.swift in Sources */,
 				94FF61B12C35DA8300BAA3B2 /* Part6View.swift in Sources */,
 				94FF61C92C35DCAF00BAA3B2 /* ChatView.swift in Sources */,
 				94FF61952C35D8B500BAA3B2 /* QuestionnaireView.swift in Sources */,
+				94EC07692C4BE7F5003B61E0 /* QuizView.swift in Sources */,
 				94FF61B72C35DB1D00BAA3B2 /* Part10View.swift in Sources */,
 				94FF61BB2C35DB2700BAA3B2 /* Part12View.swift in Sources */,
 				94FF61CB2C35DF0A00BAA3B2 /* NavigationLinkModifier.swift in Sources */,
@@ -383,21 +470,30 @@
 				94ABB4FE2C2E957A00370F39 /* Slide.swift in Sources */,
 				94FF61AB2C35DA5F00BAA3B2 /* Part3View.swift in Sources */,
 				94FF61B32C35DA9300BAA3B2 /* Part7View.swift in Sources */,
+				94EC076F2C4BEE34003B61E0 /* PatternBackgroundView.swift in Sources */,
 				94FF619A2C35D8FB00BAA3B2 /* ListView.swift in Sources */,
-				94FF61C32C35DC8200BAA3B2 /* Part16View.swift in Sources */,
 				94FF619D2C35D90A00BAA3B2 /* RegisterView.swift in Sources */,
 				94FF61A12C35D91C00BAA3B2 /* PersonDetailView.swift in Sources */,
 				94FF61B52C35DAD400BAA3B2 /* Part8View.swift in Sources */,
 				94FF61AF2C35DA7C00BAA3B2 /* Part5View.swift in Sources */,
+				94EC07762C4BF69F003B61E0 /* Picker.swift in Sources */,
+				94CAE67F2C4CECE40024FB85 /* GradientView.swift in Sources */,
+				94EC07742C4BF540003B61E0 /* TextField.swift in Sources */,
 				94FF61982C35D8F100BAA3B2 /* Part1View.swift in Sources */,
 				94FF61C72C35DCA900BAA3B2 /* UserListView.swift in Sources */,
 				94FF61C52C35DC9700BAA3B2 /* Part9View.swift in Sources */,
+				94EC076D2C4BE927003B61E0 /* Font.swift in Sources */,
 				94FF61BD2C35DB2B00BAA3B2 /* Part13View.swift in Sources */,
 				94FF61C12C35DB3800BAA3B2 /* Part15View.swift in Sources */,
 				94ABB4CB2C2E869700370F39 /* ContentView.swift in Sources */,
+				9498EE732C4D0A7900B7B542 /* ProfileView.swift in Sources */,
 				94FF619F2C35D91000BAA3B2 /* LoginView.swift in Sources */,
+				949140812C4C54DF00622956 /* PhotoPicker.swift in Sources */,
+				9491406D2C4C469400622956 /* dismissKeyboard.swift in Sources */,
 				94ABB4C92C2E869700370F39 /* astrodatingApp.swift in Sources */,
+				9492178E2C4C2E8A009C1DCE /* RegionSelectorView.swift in Sources */,
 				94FF61B92C35DB2200BAA3B2 /* Part11View.swift in Sources */,
+				94EC07782C4BF9B5003B61E0 /* DatePicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

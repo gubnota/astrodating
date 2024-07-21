@@ -1,49 +1,32 @@
-//
-//  Part14View.swift
-//  astrodating
-//
-//  Created by Vladislav Muravyev on 03-07-2024.
-//
-
-
 import SwiftUI
 
 struct Part14View: View {
-    @State private var badHabits = ""
+    @ObservedObject var viewModel: QuizViewModel
 
     var body: some View {
-        VStack {
-            Text("Do you have any bad habits?")
-                .font(.title2)
-                .padding()
-
-            Picker("Bad Habits", selection: $badHabits) {
-                ForEach(badHabitOptions, id: \.self) { habit in
-                    Text(habit)
-                }
-            }
-            .pickerStyle(SegmentedPickerStyle())
-            .padding()
-
-            NavigationLink(destination: Part15View()) {
-                Text("Next")
-                    .frame(minWidth: 0, maxWidth: .infinity)
+        QuizView(viewModel: viewModel) {
+            VStack {
+                Text("Есть ли у вас дети?")
+                    .font(.title)
+                    .lineLimit(3)
                     .padding()
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
+
+                Picker("Дети", selection: $viewModel.hasChildren) {
+                    ForEach(viewModel.hasChildrenList) { option in
+                        Text(option.name).tag(option.id)
+                    }
+                }
+                .styledPicker()
+
+                Spacer().frame(height: 50)
             }
-            .padding()
+            .padding(.horizontal)
         }
-        .navigationTitle("Part 14")
-        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
-let badHabitOptions = ["I smoke", "I don't", "Don't want to tell"]
-
 struct Part14View_Previews: PreviewProvider {
     static var previews: some View {
-        Part14View()
+        Part14View(viewModel: QuizViewModel())
     }
 }

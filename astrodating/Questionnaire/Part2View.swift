@@ -4,37 +4,29 @@
 //
 //  Created by Vladislav Muravyev on 03-07-2024.
 //
-
-
 import SwiftUI
 
 struct Part2View: View {
-    @Binding var dateOfBirth: Date
+    @ObservedObject var viewModel: QuizViewModel
 
     var body: some View {
-        VStack {
-            DatePicker("Date of Birth", selection: $dateOfBirth, displayedComponents: .date)
-                .datePickerStyle(WheelDatePickerStyle())
-                .padding()
-
-            NavigationLink(destination: Part3View(dateOfBirth: $dateOfBirth)) {
-                Text("Next")
-                    .frame(minWidth: 0, maxWidth: .infinity)
+        QuizView(viewModel: viewModel) {
+            VStack {
+                Text("День рождения")
+                    .font(.largeTitle)
                     .padding()
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
+
+                DatePicker("", selection: $viewModel.dateOfBirth, displayedComponents: .date)
+                    .styledDatePicker()
+
+                Spacer().frame(height: 50)
             }
-            .padding()
         }
-        .navigationTitle("Part 2")
-        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
 struct Part2View_Previews: PreviewProvider {
-    @State static var dateOfBirth = Date()
     static var previews: some View {
-        Part2View(dateOfBirth: $dateOfBirth)
+        Part2View(viewModel: QuizViewModel(properties: ["currentStep":2]))
     }
 }

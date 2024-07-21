@@ -15,34 +15,36 @@ struct RegisterView: View {
 
     var body: some View {
         VStack {
-            Text("Register")
+            Text("Регистрация")
                 .font(.largeTitle)
                 .padding()
 
-            TextField("Username", text: $username)
-                .padding()
-                .background(Color.gray.opacity(0.2))
-                .cornerRadius(5.0)
+            TextField("Имя пользователя", text: $username)
+                .styledTextField()
 
-            SecureField("Password", text: $password)
-                .padding()
-                .background(Color.gray.opacity(0.2))
-                .cornerRadius(5.0)
-
+            SecureField("Пароль", text: $password)
+                .styledTextField()
+            Spacer()
             Button(action: {
                 // Implement registration logic here
                 isQuestionnaireStarted = true
             }) {
-                Text("Next")
+                Text("След")
                     .font(.headline)
                     .foregroundColor(.white)
+                    .frame(minWidth: 0, maxWidth: .infinity)
                     .padding()
-                    .frame(width: 220, height: 60)
-                    .background(Color.blue)
-                    .cornerRadius(15.0)
+                    .background(Color.black)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
             }
         }
         .padding()
-        .navigate(to: QuestionnaireView(), when: $isQuestionnaireStarted)
+        .navigate(to: QuestionnaireView(viewModel: QuizViewModel()), when: $isQuestionnaireStarted)
+    }
+}
+struct RegisterView_Previews: PreviewProvider {
+    static var previews: some View {
+        RegisterView()//viewModel: QuizViewModel()
     }
 }

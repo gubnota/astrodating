@@ -1,49 +1,37 @@
-//
-//  Part9View.swift
-//  astrodating
-//
-//  Created by Vladislav Muravyev on 03-07-2024.
-//
-
 
 import SwiftUI
 
 struct Part9View: View {
-    @State private var pursuitMethod = ""
+    @ObservedObject var viewModel: QuizViewModel
 
     var body: some View {
-        VStack {
-            Text("What method do you use to pursue your partner?")
-                .font(.title2)
-                .padding()
-
-            Picker("Pursuit Method", selection: $pursuitMethod) {
-                ForEach(pursuitMethods, id: \.self) { method in
-                    Text(method)
-                }
-            }
-            .pickerStyle(SegmentedPickerStyle())
-            .padding()
-
-            NavigationLink(destination: Part10View()) {
-                Text("Next")
-                    .frame(minWidth: 0, maxWidth: .infinity)
+        QuizView(viewModel: viewModel) {
+            VStack {
+                Text("Расскажите о себе")
+                    .font(.title)
+                    .lineLimit(3)
                     .padding()
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
+
+                TextEditor(text: $viewModel.selfIntro)
+                    .frame(height: 200)
+                    .padding()
+                    .background(Color.gray.opacity(0.2))
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 4)
+                            .stroke(Color(hex: "#FD80C3"), lineWidth: 2)
+                    )
+                    .cornerRadius(4)
+                    .padding(.bottom, 10)
+
+                Spacer().frame(height: 50)
             }
-            .padding()
+            .padding(.horizontal)
         }
-        .navigationTitle("Part 9")
-        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
-let pursuitMethods = ["Actively Looking", "Passively Waiting", "Consultation", "Meeting"]
-
 struct Part9View_Previews: PreviewProvider {
     static var previews: some View {
-        Part9View()
+        Part9View(viewModel: QuizViewModel())
     }
 }

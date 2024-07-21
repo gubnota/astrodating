@@ -20,6 +20,8 @@ class AudioPlayer: ObservableObject {
 }
 
 struct ContentView: View {
+    @Environment(\.presentationMode) var presentationMode
+
     @State private var currentSlideIndex = 0
     @State private var isAutoPlayEnabled = false
     let totalSlides = 5
@@ -32,7 +34,11 @@ struct ContentView: View {
     @StateObject private var audioPlayer = AudioPlayer()
 
     var body: some View {
-        VStack {
+        
+        ZStack(alignment:.center, content: {
+            
+//            Alignment(horizontal: .leading, vertical: .center)
+           VStack {
             // Slide selector bars at the top
             HStack {
                 ForEach(0..<totalSlides, id: \.self) { index in
@@ -42,7 +48,7 @@ struct ContentView: View {
                 }
             }
             .padding(.horizontal)
-//            .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top) // Adjust padding to respect safe area
+            //            .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top) // Adjust padding to respect safe area
             
             TabView(selection: $currentSlideIndex) {
                 ForEach(0..<totalSlides, id: \.self) { index in
@@ -52,6 +58,23 @@ struct ContentView: View {
             }
             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
         }
+            HStack(alignment: .center) {
+                Button(action: {
+                    // Dismiss DetailView and go back to MainView
+                    self.presentationMode.wrappedValue.dismiss()
+                }) {
+                    Circle()
+                        .fill(Color.black)
+                        .frame(width: 64, height: 64)
+                        .overlay(
+                            Image(systemName: "arrow.left")
+                                .foregroundColor(.white)
+                        )
+                }
+                Spacer()
+            }
+
+    })
         .onReceive(timer) { _ in
             guard isAutoPlayEnabled else { return }
             self.currentSlideIndex = (self.currentSlideIndex + 1) % self.totalSlides
@@ -59,7 +82,7 @@ struct ContentView: View {
         .background(Color.black.edgesIgnoringSafeArea(.all)) // To make the background black for contrast
         .onAppear {
 //            audioPlayer.playSound()
-        }
+        }.navigationBarBackButtonHidden(true)
     }
 }
 

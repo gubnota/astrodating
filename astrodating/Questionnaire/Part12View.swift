@@ -1,39 +1,55 @@
-//
-//  Part12View.swift
-//  astrodating
-//
-//  Created by Vladislav Muravyev on 03-07-2024.
-//
-
-
 import SwiftUI
+import PhotosUI
 
 struct Part12View: View {
-    @State private var endOfPreviousRelationship = Date()
+    @ObservedObject var viewModel: QuizViewModel
+    @State private var isPickerPresented = false
 
     var body: some View {
-        VStack {
-            DatePicker("End of Previous Relationship", selection: $endOfPreviousRelationship, displayedComponents: .date)
-                .datePickerStyle(WheelDatePickerStyle())
-                .padding()
-
-            NavigationLink(destination: Part13View()) {
-                Text("Next")
-                    .frame(minWidth: 0, maxWidth: .infinity)
+        QuizView(viewModel: viewModel) {
+            VStack {
+                Text("Выберите фотографии")
+                    .font(.title)
+                    .lineLimit(3)
                     .padding()
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
+
+                Button(action: {
+                    isPickerPresented = true
+                }) {
+                    Text("Выбрать фотографии")
+                        .frame(maxWidth: .infinity)
+                        .styledPicker()
+                }
+                .sheet(isPresented: $isPickerPresented) {
+                    PhotoPicker(photos: $viewModel.photos)
+                }
+
+                ScrollView(.horizontal) {
+                    HStack {
+                        ForEach(viewModel.photos, id: \.self) { image in
+                            Image(uiImage: image)
+                                .resizable()
+                                .scaledToFit()
+                                .frame(height: 100)
+                                .cornerRadius(10)
+                                .padding()
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 6)
+                                        .stroke(Color(hex: "#FD80C3"), lineWidth: 3)
+                                )
+                                .cornerRadius(4)
+                        }
+                    }
+                }
+                .padding()
             }
-            .padding()
+            .padding(.horizontal)
         }
-        .navigationTitle("Part 12")
-        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
 struct Part12View_Previews: PreviewProvider {
     static var previews: some View {
-        Part12View()
+        Part12View(viewModel: QuizViewModel())
     }
 }

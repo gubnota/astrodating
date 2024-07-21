@@ -1,49 +1,46 @@
-//
-//  Part6View.swift
-//  astrodating
-//
-//  Created by Vladislav Muravyev on 03-07-2024.
-//
-
-
 import SwiftUI
 
 struct Part6View: View {
-    @State private var maritalStatus = ""
+    @ObservedObject var viewModel: QuizViewModel
 
     var body: some View {
-        VStack {
-            Text("Select your marital status")
-                .font(.title2)
-                .padding()
-
-            Picker("Marital Status", selection: $maritalStatus) {
-                ForEach(maritalStatuses, id: \.self) { status in
-                    Text(status)
-                }
-            }
-            .pickerStyle(SegmentedPickerStyle())
-            .padding()
-
-            NavigationLink(destination: Part7View()) {
-                Text("Next")
-                    .frame(minWidth: 0, maxWidth: .infinity)
+        QuizView(viewModel: viewModel) {
+            VStack {
+                Text("Введите свои контакты")
+                    .font(.title)
+                    .lineLimit(3)
                     .padding()
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
+
+                TextField("Телефон", text: $viewModel.tel)
+                    .styledTextField()
+                
+                TextField("VK", text: $viewModel.vk)
+                    .styledTextField()
+                
+                TextField("OK", text: $viewModel.ok)
+                    .styledTextField()
+                
+                TextField("Facebook", text: $viewModel.facebook)
+                    .styledTextField()
+                
+                TextField("Instagram", text: $viewModel.instagram)
+                    .styledTextField()
+                
+                TextField("Telegram", text: $viewModel.telegram)
+                    .styledTextField()
+                
+                TextField("Skype", text: $viewModel.skype)
+                    .styledTextField()
+
+                Spacer().frame(height: 50)
             }
-            .padding()
+            .padding(.horizontal)
         }
-        .navigationTitle("Part 6")
-        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
-let maritalStatuses = ["Single", "Married"]
-
 struct Part6View_Previews: PreviewProvider {
     static var previews: some View {
-        Part6View()
+        Part6View(viewModel: QuizViewModel())
     }
 }

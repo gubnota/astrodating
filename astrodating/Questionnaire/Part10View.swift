@@ -1,45 +1,31 @@
-//
-//  Part10View.swift
-//  astrodating
-//
-//  Created by Vladislav Muravyev on 03-07-2024.
-//
-
-
 import SwiftUI
 
 struct Part10View: View {
-    @State private var selfIntro = ""
+    @ObservedObject var viewModel: QuizViewModel
 
     var body: some View {
-        VStack {
-            Text("Introduce Yourself")
-                .padding()
-            
-            TextEditor(text: $selfIntro)
-                .frame(height: 100)
-                .padding()
-                .background(Color.gray.opacity(0.2))
-                .cornerRadius(5.0)
-                .padding()
-
-            NavigationLink(destination: Part11View()) {
-                Text("Next")
-                    .frame(minWidth: 0, maxWidth: .infinity)
+        QuizView(viewModel: viewModel) {
+            VStack {
+                Text("Укажите рост и вес")
+                    .font(.title)
+                    .lineLimit(3)
                     .padding()
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
+
+                TextField("Рост (см)", text: $viewModel.height)
+                    .styledTextField()
+                
+                TextField("Вес (кг)", text: $viewModel.weight)
+                    .styledTextField()
+
+                Spacer().frame(height: 50)
             }
-            .padding()
+            .padding(.horizontal)
         }
-        .navigationTitle("Part 10")
-        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
 struct Part10View_Previews: PreviewProvider {
     static var previews: some View {
-        Part10View()
+        Part10View(viewModel: QuizViewModel())
     }
 }

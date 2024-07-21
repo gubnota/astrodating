@@ -19,15 +19,15 @@ struct PersonDetailView: View {
                 .fontWeight(.bold)
                 .padding(.top)
 
-            Text("Astrological Sign: \(person.astrologicalSign)")
-            Text("Chinese Zodiac: \(person.chineseZodiac)")
-            Text("Region: \(person.region)")
-            Text("Love Language: \(person.loveLanguage)")
+            Text("Астрологический знак: \(person.astrologicalSign)")
+            Text("Китайский зодиак: \(person.chineseZodiac)")
+            Text("Регион: \(person.region)")
+            Text("Язык любви: \(person.loveLanguage)")
 
             Spacer()
 
             NavigationLink(destination: ChatView(person: person)) {
-                Text("Chat")
+                Text("Чат")
                     .font(.title2)
                     .foregroundColor(.white)
                     .frame(minWidth: 0, maxWidth: .infinity)
@@ -45,7 +45,7 @@ struct PersonDetailView: View {
 
 struct PersonDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        let samplePerson = Person(name: "Sample Person", imageName: "sampleImage", astrologicalSign: "Aries", chineseZodiac: "Dragon", region: "Moscow", loveLanguage: "Quality Time")
+        let samplePerson = Person(name: "Иван Кублаханов", imageName: "john_smith", astrologicalSign: "Овен", chineseZodiac: "Дракон", region: "Нижний Новгород", loveLanguage: "Время")
         PersonDetailView(person: samplePerson)
     }
 }

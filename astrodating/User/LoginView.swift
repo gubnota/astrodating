@@ -10,50 +10,53 @@ struct LoginView: View {
     var body: some View {
         NavigationView {
             VStack {
-                Text("Login")
+                Text("Вход")
                     .font(.largeTitle)
+                    .fontWeight(.bold)
                     .padding()
 
-                TextField("Username", text: $username)
-                    .padding()
-                    .background(Color.gray.opacity(0.2))
-                    .cornerRadius(5.0)
-
-                SecureField("Password", text: $password)
-                    .padding()
-                    .background(Color.gray.opacity(0.2))
-                    .cornerRadius(5.0)
+                TextField("Имя пользователя", text: $username)
+                    .styledTextField()
+                
+                SecureField("Пароль", text: $password)
+                    .styledTextField()
 
                 Button(action: {
-                    if username == "user1" && password == "admin" {
+                    if username == "123" && password == "admin" {
                         isLoggedIn = true
                     } else {
                         showAlert = true
                     }
                 }) {
-                    Text("Login")
-                        .font(.headline)
+                    Text("Вход")
                         .foregroundColor(.white)
+                        .fontWeight(.bold)
+                        .frame(minWidth: 0, maxWidth: .infinity)
                         .padding()
-                        .frame(width: 220, height: 60)
-                        .background(Color.blue)
-                        .cornerRadius(15.0)
+                        .background(Color(hex: "#FD80C3"))
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
                 }
                 .alert(isPresented: $showAlert) {
-                    Alert(title: Text("Invalid Login"), message: Text("Username or password is incorrect"), dismissButton: .default(Text("OK")))
+                    Alert(title: Text("Неверные логин/пароль!"), message: Text("Имя пользователя или пароль неверны"), dismissButton: .default(Text("OK")))
                 }
 
                 NavigationLink(destination: RegisterView(), isActive: $isRegistering) {
-                    Button("Register") {
+                    Button("Регистрация") {
                         isRegistering = true
                     }
                 }
+                .foregroundColor(.white)
+                .frame(minWidth: 0, maxWidth: .infinity)
                 .padding()
+                .background(Color(hex: "#05B5CD"))
+                .foregroundColor(.white)
+                .cornerRadius(10)
             }
             .padding()
             .navigationBarHidden(true)
         }
-        .navigate(to: QuestionnaireView(), when: $isLoggedIn)
+        .navigate(to: QuestionnaireView(viewModel: QuizViewModel()), when: $isLoggedIn)
     }
 }
 

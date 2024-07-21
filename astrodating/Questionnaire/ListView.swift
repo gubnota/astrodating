@@ -1,64 +1,31 @@
-//
-//  ListView.swift
-//  astrodating
-//
-//  Created by Vladislav Muravyev on 03-07-2024.
-//
 import SwiftUI
 
 struct ListView: View {
+    var users: [Person]
+
     var body: some View {
         NavigationView {
             ScrollView {
-                LazyVGrid(columns: [GridItem(), GridItem()]) {
-                    ForEach(0..<20) { index in
-                        NavigationLink(destination: PersonDetailView(person: Person(name: "", imageName: "", astrologicalSign: "", chineseZodiac: "", region: "", loveLanguage: ""))) {
-                            Text("Person \(index + 1)")
-                                .padding()
-                                .background(Color.blue)
-                                .foregroundColor(.white)
-                                .cornerRadius(10)
-                                .padding(5)
+                LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 20) {
+                    ForEach(users) { user in
+                        NavigationLink(destination: PersonDetailView(person: user)) {
+                            UserCardView(person: user)
                         }
                     }
                 }
+                .padding()
             }
-            .navigationTitle("Possible Matches")
+            .navigationTitle("Кандидаты")
         }
     }
 }
 
-//struct ListView: View {
-//    var body: some View {
-//        NavigationView {
-//            ScrollView {
-//                LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 20) {
-//                    ForEach(samplePersons) { person in
-//                        NavigationLink(destination: PersonDetailView(person: person)) {
-//                            VStack {
-//                                Image(person.imageName)
-//                                    .resizable()
-//                                    .scaledToFit()
-//                                    .frame(height: 150)
-//                                    .clipShape(Circle())
-//                                    .overlay(Circle().stroke(Color.white, lineWidth: 2))
-//                                    .shadow(radius: 5)
-//                                Text(person.name)
-//                                    .font(.headline)
-//                            }
-//                            .padding()
-//                        }
-//                    }
-//                }
-//                .padding()
-//            }
-//            .navigationTitle("Potential Matches")
-//        }
-//    }
-//}
-//
-//struct ListView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ListView()
-//    }
-//}
+struct ListView_Previews: PreviewProvider {
+    static var previews: some View {
+        let sampleUsers = [
+            Person(name: "John Doe", imageName: "john_doe", astrologicalSign: "Gemini", chineseZodiac: "Rat", region: "Saint Petersburg", loveLanguage: "Acts of Service"),
+            Person(name: "Jane Smith", imageName: "jane_smith", astrologicalSign: "Leo", chineseZodiac: "Ox", region: "Moscow", loveLanguage: "Physical Touch")
+        ]
+        ListView(users: sampleUsers)
+    }
+}
