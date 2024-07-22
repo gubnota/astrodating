@@ -10,7 +10,7 @@ struct PersonDetailView: View {
                 .scaledToFit()
                 .frame(height: 300)
                 .clipShape(Circle())
-                .overlay(Circle().stroke(Color(hex: "#FD80C3"), lineWidth: 6))
+                .overlay(Circle().stroke(primaryColor, lineWidth: 6))
                 .padding()
             Spacer()
 
@@ -58,6 +58,6 @@ struct PersonDetailView: View {
 
 struct PersonDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        PersonDetailView(person: samplePerson)
+        PersonDetailView(person: samplePerson).environmentObject(AppViewModel())
     }
 }

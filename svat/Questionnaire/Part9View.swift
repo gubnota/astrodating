@@ -18,7 +18,7 @@ struct Part9View: View {
 //                    .background(Color.gray.opacity(0.2))
                     .overlay(
                         RoundedRectangle(cornerRadius: 4)
-                            .stroke(Color(hex: "#FD80C3"), lineWidth: 4)
+                            .stroke(primaryColor, lineWidth: 4)
                     )
 //                    .cornerRadius(6)
 //                    .padding(.bottom, 10)

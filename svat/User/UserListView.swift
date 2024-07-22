@@ -28,6 +28,7 @@ struct UserListView: View {
                 }
                 .padding()
             }
+
 //            .navigationTitle("Кандидаты")
 //            .navigationBarItems(leading: Rectangle().opacity(0),trailing: profileButton)
 
@@ -45,7 +46,7 @@ struct UserListView: View {
     
     struct UserCardView: View {
         var person: Person
-        let gradient = LinearGradient(colors: [Color(hex: "#FD80C3").opacity(0.2), Color(hex: "#05B5CD").opacity(0.2)], startPoint: .topLeading, endPoint: .bottomTrailing)
+        let gradient = LinearGradient(colors: [pink.opacity(0.2), primaryColor.opacity(0.2)], startPoint: .topLeading, endPoint: .bottomTrailing)
         
         var body: some View {
             VStack {
@@ -54,7 +55,7 @@ struct UserListView: View {
                     .scaledToFit()
                     .frame(height: 150)
                     .clipShape(Circle())
-                    .overlay(Circle().stroke(Color(hex: "#FD80C3"), lineWidth: 6))
+                    .overlay(Circle().stroke(primaryColor, lineWidth: 6))
                 Spacer()
                 Text(person.name)
                     .font(.headline)
@@ -74,10 +75,12 @@ struct UserListView: View {
         static var previews: some View {
             NavigationView {
             UserListView(users: sampleUsers)
+                    .environmentObject(AppViewModel())
             }
             .navigationViewStyle(StackNavigationViewStyle())// make iPad version to fill up whole area
             .navigationBarHidden(true) // Hide the navigation bar
             .navigationBarTitle("", displayMode: .inline) // Set title to empty string
         }
+        
     }
 

@@ -5,6 +5,7 @@ struct LoginView: View {
     @State private var password: String = "admin"
     @State private var showAlert = false
     @ObservedObject var viewModel: QuizViewModel
+    @EnvironmentObject var appViewModel: AppViewModel
 
     var body: some View {
         VStack {
@@ -12,16 +13,16 @@ struct LoginView: View {
                 .font(.largeTitle)
                 .fontWeight(.bold)
                 .padding()
-
+            
             TextField("Имя пользователя", text: $username)
                 .styledTextField()
             
             SecureField("Пароль", text: $password)
                 .styledTextField()
-
+            
             Button(action: {
                 if username == "123" && password == "admin" {
-                    viewModel.currentRoute = "list"
+                    appViewModel.currentRoute = "list"
                 } else {
                     showAlert = true
                 }
@@ -31,26 +32,28 @@ struct LoginView: View {
                     .fontWeight(.bold)
                     .frame(minWidth: 0, maxWidth: .infinity)
                     .padding()
-                    .background(Color(hex: "#FD80C3"))
+                    .background(primaryColor)
                     .foregroundColor(.white)
                     .cornerRadius(10)
             }
             .alert(isPresented: $showAlert) {
                 Alert(title: Text("Неверные логин/пароль!"), message: Text("Имя пользователя или пароль неверны"), dismissButton: .default(Text("OK")))
             }
-
+            
             Rectangle().frame(height: 10).opacity(0)
-
-            Button("Регистрация") {
-                viewModel.currentRoute = "register"
-            }
-            .foregroundColor(.white)
-            .frame(minWidth: 0, maxWidth: .infinity)
-            .padding()
-            .background(Color(hex: "#05B5CD"))
-            .foregroundColor(.white)
-            .cornerRadius(10)
-        }
+            
+            Button(action: {
+                appViewModel.currentRoute = "register"
+            }){
+                Text("Регистрация")
+                    .foregroundColor(.white)
+                    .fontWeight(.bold)
+                    .frame(minWidth: 0, maxWidth: .infinity)
+                    .padding()
+                    .background(pink)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
+            }}
         .padding()
         .dismissKeyboardOnTap()
     }
@@ -58,6 +61,6 @@ struct LoginView: View {
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView(viewModel: QuizViewModel())
+        LoginView(viewModel: QuizViewModel()).environmentObject(AppViewModel())
     }
 }

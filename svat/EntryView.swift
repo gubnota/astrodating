@@ -8,11 +8,12 @@ import SwiftUI
 
 struct EntryView: View {
     @ObservedObject var viewModel: QuizViewModel
+    @EnvironmentObject var appViewModel: AppViewModel
 
     var body: some View {
         NavigationView {
             VStack {
-                switch viewModel.currentRoute {
+                switch appViewModel.currentRoute {
                 case "list":
                     UserListView(users: sampleUsers)
                 case "chat":
@@ -33,7 +34,7 @@ struct EntryView: View {
                     LoginView(viewModel: viewModel)
                 }
             }
-            .edgesIgnoringSafeArea(.all) // Extend to the edges of the screen
+//            .edgesIgnoringSafeArea(.all) // Extend to the edges of the screen
         }
         .navigationViewStyle(StackNavigationViewStyle())// make iPad version to fill up whole area
         .onAppear {
@@ -44,6 +45,6 @@ struct EntryView: View {
 
 struct EntryView_Previews: PreviewProvider {
     static var previews: some View {
-        EntryView(viewModel: QuizViewModel())
+        EntryView(viewModel: QuizViewModel()).environmentObject(AppViewModel())
     }
 }

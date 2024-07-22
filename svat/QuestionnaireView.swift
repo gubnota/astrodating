@@ -66,6 +66,7 @@ struct QuestionnaireView_Previews: PreviewProvider {
                 .navigationViewStyle(StackNavigationViewStyle())// make iPad version to fill up whole area
                 .navigationBarHidden(true) // Hide the navigation bar
                 .navigationBarTitle("", displayMode: .inline) // Set title to empty string
+                .environmentObject(AppViewModel())
             }
         .navigationViewStyle(StackNavigationViewStyle())
     }

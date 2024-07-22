@@ -1,9 +1,10 @@
 import SwiftUI
 
 struct QuizView<Content: View>: View {
-    let gradient = LinearGradient(colors: [Color(hex: "#FD80C3").opacity(0.1), Color(hex: "#05B5CD").opacity(0.1)], startPoint: .topLeading, endPoint: .bottomTrailing)
+    let gradient = LinearGradient(colors: [pink.opacity(0.1), primaryColor.opacity(0.1)], startPoint: .topLeading, endPoint: .bottomTrailing)
     @ObservedObject var viewModel: QuizViewModel
     @State private var navigateToUserList = false // State to control navigation
+    @EnvironmentObject var app: AppViewModel
 
     let content: Content
 
@@ -43,7 +44,7 @@ struct QuizView<Content: View>: View {
                                     viewModel.currentStep += 1
                                 } else {
                                     // Finish action
-                                    viewModel.currentRoute = "list"
+                                    app.currentRoute = "list"
 //                                    navigateToUserList = true // Trigger navigation
                                     
                                 }
@@ -98,6 +99,6 @@ struct QuizView_Previews: PreviewProvider {
                     .fontWeight(.bold)
                     .padding()
             }
-        }
+        }.environmentObject(AppViewModel())
     }
 }

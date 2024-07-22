@@ -12,7 +12,7 @@ struct RegisterView: View {
     @State private var username: String = ""
     @State private var password: String = ""
     @ObservedObject var viewModel: QuizViewModel
-    
+    @EnvironmentObject var app: AppViewModel
     var body: some View {
         VStack {
             Spacer()
@@ -26,7 +26,7 @@ struct RegisterView: View {
             SecureField("Пароль", text: $password)
                 .styledTextField()
             Button(action: {
-                viewModel.currentRoute = "questionnaire"
+                app.currentRoute = "questionnaire"
             }) {
                 Text("След")
                     .font(.headline)
@@ -45,7 +45,10 @@ struct RegisterView: View {
 }
 struct RegisterView_Previews: PreviewProvider {
     static var previews: some View {
-        EntryView(viewModel: QuizViewModel.init(properties: ["currentRoute":"register"]) )//QuestionnaireView(viewModel: QuizViewModel())//LoginView()//ContentView
+        EntryView(viewModel: QuizViewModel.init(properties: ["currentRoute":"register"])
+        )
+        .environmentObject(AppViewModel())
+        //QuestionnaireView(viewModel: QuizViewModel())//LoginView()//ContentView
     }
 //        NavigationView {
 //

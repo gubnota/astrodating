@@ -13,18 +13,18 @@ struct ChatView: View {
             ScrollView {
                 Text("Привет!")
                     .padding()
-                    .background(Color(hex: "#FD80C3").opacity(0.2))
+                    .background(pink.opacity(0.2))
                     .cornerRadius(10)
                     .frame(maxWidth: .infinity, alignment: .trailing)
                 Text("Привет!")
                     .padding()
-                    .background(Color(hex: "#05B5CD").opacity(0.2))
+                    .background(primaryColor.opacity(0.2))
                     .cornerRadius(10)
                     .frame(maxWidth: .infinity, alignment: .leading)
                 ForEach(messages, id: \.self) { message in
                     Text(message)
                         .padding()
-                        .background(Color(hex: "#05B5CD").opacity(0.2))
+                        .background(primaryColor.opacity(0.2))
                         .cornerRadius(10)
                         .frame(maxWidth: .infinity, alignment: .leading)
                 }
@@ -40,7 +40,7 @@ struct ChatView: View {
                 }) {
                     Text("Отправить")
                         .padding()
-                        .background(Color.black)
+                        .background(black)
                         .foregroundColor(.white)
                         .cornerRadius(10)
                 }
@@ -84,5 +84,6 @@ struct ChatView_Previews: PreviewProvider {
     static var previews: some View {
         let samplePerson = Person(name: "Sample Person", imageName: "sampleImage", astrologicalSign: "Aries", chineseZodiac: "Dragon", region: "Moscow", loveLanguage: "Quality Time")
         ChatView(person: samplePerson)
+            .environmentObject(AppViewModel())
     }
 }

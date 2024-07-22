@@ -8,7 +8,7 @@ import SwiftUI
 
 struct ProfileView: View {
     @ObservedObject var viewModel: QuizViewModel
-
+    @EnvironmentObject var app: AppViewModel
     var body: some View {
         VStack(spacing: 20) {
             Text("Профиль")
@@ -21,7 +21,7 @@ struct ProfileView: View {
                 .scaledToFit()
                 .frame(width: 150, height: 150)
                 .clipShape(Circle())
-                .overlay(Circle().stroke(Color(hex: "#FD80C3"), lineWidth: 6))
+                .overlay(Circle().stroke(primaryColor, lineWidth: 6))
 
             let profileData: [(String, String)] = [
                 ("Имя:", viewModel.name),
@@ -53,14 +53,14 @@ struct ProfileView: View {
 
             Spacer()
             Button(action: {
-                    viewModel.currentRoute = ""
+                app.goToHome()// currentRoute = ''
             }) {
                 Text("Выход")
                     .foregroundColor(.white)
                     .fontWeight(.bold)
                     .frame(minWidth: 0, maxWidth: .infinity)
                     .padding()
-                    .background(Color(hex: "#FD80C3"))
+                    .background(primaryColor)
                     .foregroundColor(.white)
                     .cornerRadius(10)
             }
@@ -72,6 +72,6 @@ struct ProfileView: View {
 
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileView(viewModel: QuizViewModel())
+        ProfileView(viewModel: QuizViewModel()).environmentObject(AppViewModel())
     }
 }

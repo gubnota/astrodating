@@ -7,7 +7,7 @@
 
 import SwiftUI
 extension View{
-func styledDatePicker(borderColor: Color = Color(hex: "#FD80C3")) -> some View {
+func styledDatePicker(borderColor: Color = primaryColor) -> some View {
     self
         .datePickerStyle(WheelDatePickerStyle())//GraphicalDatePickerStyle())
         .environment(\.locale, Locale(identifier: "ru"))

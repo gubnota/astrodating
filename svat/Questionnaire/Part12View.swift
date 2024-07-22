@@ -35,7 +35,7 @@ struct Part12View: View {
                                 .padding()
                                 .overlay(
                                     RoundedRectangle(cornerRadius: 6)
-                                        .stroke(Color(hex: "#FD80C3"), lineWidth: 3)
+                                        .stroke(primaryColor, lineWidth: 3)
                                 )
                                 .cornerRadius(4)
                         }

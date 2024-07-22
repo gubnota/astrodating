@@ -6,7 +6,7 @@
 //
 import SwiftUI
 extension View {
-    func styledTextField(borderColor: Color = Color(hex: "#FD80C3")) -> some View {
+    func styledTextField(borderColor: Color = primaryColor) -> some View {
         self
             .padding()
             .background(Color.white.opacity(0.2))

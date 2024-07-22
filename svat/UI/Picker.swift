@@ -6,7 +6,7 @@
 //
 import SwiftUI
 extension View{
-    func styledPicker(borderColor: Color = Color(hex: "#FD80C3")) -> some View {
+    func styledPicker(borderColor: Color = primaryColor) -> some View {
         self
             .pickerStyle(MenuPickerStyle())
             .padding()

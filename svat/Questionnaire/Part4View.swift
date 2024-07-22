@@ -31,7 +31,7 @@ struct Part4View: View {
                         .fontWeight(.bold)
                         .frame(minWidth: 0, maxWidth: .infinity)
                         .padding()
-                        .background(Color(hex: "#FD80C3"))
+                        .background(pink)
                         .foregroundColor(.black)
                         
                         .cornerRadius(10)
