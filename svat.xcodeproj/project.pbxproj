@@ -31,13 +31,13 @@
 		9498EE752C4D116800B7B542 /* QuizViewModel_ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9498EE742C4D116200B7B542 /* QuizViewModel_ext.swift */; };
 		9498EE792C4D17A000B7B542 /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9498EE782C4D179D00B7B542 /* EntryView.swift */; };
 		9498EE7B2C4D1E1500B7B542 /* sampleUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9498EE7A2C4D1E1200B7B542 /* sampleUsers.swift */; };
-		94ABB4C92C2E869700370F39 /* astrodatingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94ABB4C82C2E869700370F39 /* astrodatingApp.swift */; };
+		94ABB4C92C2E869700370F39 /* svatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94ABB4C82C2E869700370F39 /* svatApp.swift */; };
 		94ABB4CB2C2E869700370F39 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94ABB4CA2C2E869700370F39 /* ContentView.swift */; };
 		94ABB4CD2C2E869800370F39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94ABB4CC2C2E869800370F39 /* Assets.xcassets */; };
 		94ABB4D02C2E869800370F39 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94ABB4CF2C2E869800370F39 /* Preview Assets.xcassets */; };
-		94ABB4DA2C2E869800370F39 /* astrodatingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94ABB4D92C2E869800370F39 /* astrodatingTests.swift */; };
-		94ABB4E42C2E869800370F39 /* astrodatingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94ABB4E32C2E869800370F39 /* astrodatingUITests.swift */; };
-		94ABB4E62C2E869800370F39 /* astrodatingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94ABB4E52C2E869800370F39 /* astrodatingUITestsLaunchTests.swift */; };
+		94ABB4DA2C2E869800370F39 /* svatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94ABB4D92C2E869800370F39 /* svatTests.swift */; };
+		94ABB4E42C2E869800370F39 /* svatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94ABB4E32C2E869800370F39 /* svatUITests.swift */; };
+		94ABB4E62C2E869800370F39 /* svatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94ABB4E52C2E869800370F39 /* svatUITestsLaunchTests.swift */; };
 		94ABB4F42C2E896700370F39 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 94ABB4F32C2E896700370F39 /* SDWebImage */; };
 		94ABB4F62C2E896700370F39 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 94ABB4F52C2E896700370F39 /* SDWebImageMapKit */; };
 		94ABB4F92C2E898500370F39 /* SDWebImageWebPCoder in Frameworks */ = {isa = PBXBuildFile; productRef = 94ABB4F82C2E898500370F39 /* SDWebImageWebPCoder */; };
@@ -83,14 +83,14 @@
 			containerPortal = 94ABB4BD2C2E869700370F39 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 94ABB4C42C2E869700370F39;
-			remoteInfo = astrodating;
+			remoteInfo = svat;
 		};
 		94ABB4E02C2E869800370F39 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 94ABB4BD2C2E869700370F39 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 94ABB4C42C2E869700370F39;
-			remoteInfo = astrodating;
+			remoteInfo = svat;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -119,16 +119,16 @@
 		9498EE742C4D116200B7B542 /* QuizViewModel_ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewModel_ext.swift; sourceTree = "<group>"; };
 		9498EE782C4D179D00B7B542 /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
 		9498EE7A2C4D1E1200B7B542 /* sampleUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sampleUsers.swift; sourceTree = "<group>"; };
-		94ABB4C52C2E869700370F39 /* astrodating.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = astrodating.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		94ABB4C82C2E869700370F39 /* astrodatingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = astrodatingApp.swift; sourceTree = "<group>"; };
+		94ABB4C52C2E869700370F39 /* svat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = svat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		94ABB4C82C2E869700370F39 /* svatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = svatApp.swift; sourceTree = "<group>"; };
 		94ABB4CA2C2E869700370F39 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		94ABB4CC2C2E869800370F39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94ABB4CF2C2E869800370F39 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		94ABB4D52C2E869800370F39 /* astrodatingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = astrodatingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		94ABB4D92C2E869800370F39 /* astrodatingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = astrodatingTests.swift; sourceTree = "<group>"; };
-		94ABB4DF2C2E869800370F39 /* astrodatingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = astrodatingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		94ABB4E32C2E869800370F39 /* astrodatingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = astrodatingUITests.swift; sourceTree = "<group>"; };
-		94ABB4E52C2E869800370F39 /* astrodatingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = astrodatingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		94ABB4D52C2E869800370F39 /* svatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = svatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		94ABB4D92C2E869800370F39 /* svatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = svatTests.swift; sourceTree = "<group>"; };
+		94ABB4DF2C2E869800370F39 /* svatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = svatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		94ABB4E32C2E869800370F39 /* svatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = svatUITests.swift; sourceTree = "<group>"; };
+		94ABB4E52C2E869800370F39 /* svatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = svatUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		94ABB4FB2C2E905000370F39 /* Info2.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info2.plist; sourceTree = "<group>"; };
 		94ABB4FD2C2E957A00370F39 /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
 		94CAE67E2C4CECE00024FB85 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
@@ -212,9 +212,9 @@
 			isa = PBXGroup;
 			children = (
 				94ABB4FB2C2E905000370F39 /* Info2.plist */,
-				94ABB4C72C2E869700370F39 /* astrodating */,
-				94ABB4D82C2E869800370F39 /* astrodatingTests */,
-				94ABB4E22C2E869800370F39 /* astrodatingUITests */,
+				94ABB4C72C2E869700370F39 /* svat */,
+				94ABB4D82C2E869800370F39 /* svatTests */,
+				94ABB4E22C2E869800370F39 /* svatUITests */,
 				94ABB4C62C2E869700370F39 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -222,14 +222,14 @@
 		94ABB4C62C2E869700370F39 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				94ABB4C52C2E869700370F39 /* astrodating.app */,
-				94ABB4D52C2E869800370F39 /* astrodatingTests.xctest */,
-				94ABB4DF2C2E869800370F39 /* astrodatingUITests.xctest */,
+				94ABB4C52C2E869700370F39 /* svat.app */,
+				94ABB4D52C2E869800370F39 /* svatTests.xctest */,
+				94ABB4DF2C2E869800370F39 /* svatUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		94ABB4C72C2E869700370F39 /* astrodating */ = {
+		94ABB4C72C2E869700370F39 /* svat */ = {
 			isa = PBXGroup;
 			children = (
 				941A9DB82C4D49AE00E35A4B /* routing */,
@@ -238,14 +238,14 @@
 				94EC07722C4BF52F003B61E0 /* UI */,
 				94FF619B2C35D90600BAA3B2 /* User */,
 				94FF61962C35D8E900BAA3B2 /* Questionnaire */,
-				94ABB4C82C2E869700370F39 /* astrodatingApp.swift */,
+				94ABB4C82C2E869700370F39 /* svatApp.swift */,
 				94ABB4CA2C2E869700370F39 /* ContentView.swift */,
 				94FF61942C35D8B500BAA3B2 /* QuestionnaireView.swift */,
 				94ABB4FD2C2E957A00370F39 /* Slide.swift */,
 				94ABB4CC2C2E869800370F39 /* Assets.xcassets */,
 				94ABB4CE2C2E869800370F39 /* Preview Content */,
 			);
-			path = astrodating;
+			path = svat;
 			sourceTree = "<group>";
 		};
 		94ABB4CE2C2E869800370F39 /* Preview Content */ = {
@@ -256,21 +256,21 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		94ABB4D82C2E869800370F39 /* astrodatingTests */ = {
+		94ABB4D82C2E869800370F39 /* svatTests */ = {
 			isa = PBXGroup;
 			children = (
-				94ABB4D92C2E869800370F39 /* astrodatingTests.swift */,
+				94ABB4D92C2E869800370F39 /* svatTests.swift */,
 			);
-			path = astrodatingTests;
+			path = svatTests;
 			sourceTree = "<group>";
 		};
-		94ABB4E22C2E869800370F39 /* astrodatingUITests */ = {
+		94ABB4E22C2E869800370F39 /* svatUITests */ = {
 			isa = PBXGroup;
 			children = (
-				94ABB4E32C2E869800370F39 /* astrodatingUITests.swift */,
-				94ABB4E52C2E869800370F39 /* astrodatingUITestsLaunchTests.swift */,
+				94ABB4E32C2E869800370F39 /* svatUITests.swift */,
+				94ABB4E52C2E869800370F39 /* svatUITestsLaunchTests.swift */,
 			);
-			path = astrodatingUITests;
+			path = svatUITests;
 			sourceTree = "<group>";
 		};
 		94EC07722C4BF52F003B61E0 /* UI */ = {
@@ -350,9 +350,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		94ABB4C42C2E869700370F39 /* astrodating */ = {
+		94ABB4C42C2E869700370F39 /* svat */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 94ABB4E92C2E869800370F39 /* Build configuration list for PBXNativeTarget "astrodating" */;
+			buildConfigurationList = 94ABB4E92C2E869800370F39 /* Build configuration list for PBXNativeTarget "svat" */;
 			buildPhases = (
 				94ABB4C12C2E869700370F39 /* Sources */,
 				94ABB4C22C2E869700370F39 /* Frameworks */,
@@ -362,19 +362,19 @@
 			);
 			dependencies = (
 			);
-			name = astrodating;
+			name = svat;
 			packageProductDependencies = (
 				94ABB4F32C2E896700370F39 /* SDWebImage */,
 				94ABB4F52C2E896700370F39 /* SDWebImageMapKit */,
 				94ABB4F82C2E898500370F39 /* SDWebImageWebPCoder */,
 			);
-			productName = astrodating;
-			productReference = 94ABB4C52C2E869700370F39 /* astrodating.app */;
+			productName = svat;
+			productReference = 94ABB4C52C2E869700370F39 /* svat.app */;
 			productType = "com.apple.product-type.application";
 		};
-		94ABB4D42C2E869800370F39 /* astrodatingTests */ = {
+		94ABB4D42C2E869800370F39 /* svatTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 94ABB4EC2C2E869800370F39 /* Build configuration list for PBXNativeTarget "astrodatingTests" */;
+			buildConfigurationList = 94ABB4EC2C2E869800370F39 /* Build configuration list for PBXNativeTarget "svatTests" */;
 			buildPhases = (
 				94ABB4D12C2E869800370F39 /* Sources */,
 				94ABB4D22C2E869800370F39 /* Frameworks */,
@@ -385,14 +385,14 @@
 			dependencies = (
 				94ABB4D72C2E869800370F39 /* PBXTargetDependency */,
 			);
-			name = astrodatingTests;
-			productName = astrodatingTests;
-			productReference = 94ABB4D52C2E869800370F39 /* astrodatingTests.xctest */;
+			name = svatTests;
+			productName = svatTests;
+			productReference = 94ABB4D52C2E869800370F39 /* svatTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		94ABB4DE2C2E869800370F39 /* astrodatingUITests */ = {
+		94ABB4DE2C2E869800370F39 /* svatUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 94ABB4EF2C2E869800370F39 /* Build configuration list for PBXNativeTarget "astrodatingUITests" */;
+			buildConfigurationList = 94ABB4EF2C2E869800370F39 /* Build configuration list for PBXNativeTarget "svatUITests" */;
 			buildPhases = (
 				94ABB4DB2C2E869800370F39 /* Sources */,
 				94ABB4DC2C2E869800370F39 /* Frameworks */,
@@ -403,9 +403,9 @@
 			dependencies = (
 				94ABB4E12C2E869800370F39 /* PBXTargetDependency */,
 			);
-			name = astrodatingUITests;
-			productName = astrodatingUITests;
-			productReference = 94ABB4DF2C2E869800370F39 /* astrodatingUITests.xctest */;
+			name = svatUITests;
+			productName = svatUITests;
+			productReference = 94ABB4DF2C2E869800370F39 /* svatUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -431,7 +431,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 94ABB4C02C2E869700370F39 /* Build configuration list for PBXProject "astrodating" */;
+			buildConfigurationList = 94ABB4C02C2E869700370F39 /* Build configuration list for PBXProject "svat" */;
 			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -448,9 +448,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				94ABB4C42C2E869700370F39 /* astrodating */,
-				94ABB4D42C2E869800370F39 /* astrodatingTests */,
-				94ABB4DE2C2E869800370F39 /* astrodatingUITests */,
+				94ABB4C42C2E869700370F39 /* svat */,
+				94ABB4D42C2E869800370F39 /* svatTests */,
+				94ABB4DE2C2E869800370F39 /* svatUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -539,7 +539,7 @@
 				949140812C4C54DF00622956 /* PhotoPicker.swift in Sources */,
 				9498EE752C4D116800B7B542 /* QuizViewModel_ext.swift in Sources */,
 				9491406D2C4C469400622956 /* dismissKeyboard.swift in Sources */,
-				94ABB4C92C2E869700370F39 /* astrodatingApp.swift in Sources */,
+				94ABB4C92C2E869700370F39 /* svatApp.swift in Sources */,
 				9492178E2C4C2E8A009C1DCE /* RegionSelectorView.swift in Sources */,
 				9498EE7B2C4D1E1500B7B542 /* sampleUsers.swift in Sources */,
 				94FF61B92C35DB2200BAA3B2 /* Part11View.swift in Sources */,
@@ -553,7 +553,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94ABB4DA2C2E869800370F39 /* astrodatingTests.swift in Sources */,
+				94ABB4DA2C2E869800370F39 /* svatTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -561,8 +561,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94ABB4E42C2E869800370F39 /* astrodatingUITests.swift in Sources */,
-				94ABB4E62C2E869800370F39 /* astrodatingUITestsLaunchTests.swift in Sources */,
+				94ABB4E42C2E869800370F39 /* svatUITests.swift in Sources */,
+				94ABB4E62C2E869800370F39 /* svatUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,12 +571,12 @@
 /* Begin PBXTargetDependency section */
 		94ABB4D72C2E869800370F39 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 94ABB4C42C2E869700370F39 /* astrodating */;
+			target = 94ABB4C42C2E869700370F39 /* svat */;
 			targetProxy = 94ABB4D62C2E869800370F39 /* PBXContainerItemProxy */;
 		};
 		94ABB4E12C2E869800370F39 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 94ABB4C42C2E869700370F39 /* astrodating */;
+			target = 94ABB4C42C2E869700370F39 /* svat */;
 			targetProxy = 94ABB4E02C2E869800370F39 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -707,12 +707,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_ASSET_PATHS = "\"astrodating/Preview Content\"";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"svat/Preview Content\"";
 				DEVELOPMENT_TEAM = RSD67YH647;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Info2.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "СватАстро";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -723,8 +725,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.3;
-				PRODUCT_BUNDLE_IDENTIFIER = astrodating.ru;
+				MARKETING_VERSION = 0.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = svat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -738,12 +740,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_ASSET_PATHS = "\"astrodating/Preview Content\"";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"svat/Preview Content\"";
 				DEVELOPMENT_TEAM = RSD67YH647;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Info2.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "СватАстро";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -754,8 +758,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.3;
-				PRODUCT_BUNDLE_IDENTIFIER = astrodating.ru;
+				MARKETING_VERSION = 0.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = svat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -773,12 +777,12 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ru.astrodatingTests;
+				PRODUCT_BUNDLE_IDENTIFIER = svatTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/astrodating.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/astrodating";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/svat.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/svat";
 			};
 			name = Debug;
 		};
@@ -792,12 +796,12 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ru.astrodatingTests;
+				PRODUCT_BUNDLE_IDENTIFIER = svatTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/astrodating.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/astrodating";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/svat.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/svat";
 			};
 			name = Release;
 		};
@@ -809,12 +813,12 @@
 				DEVELOPMENT_TEAM = RSD67YH647;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ru.astrodatingUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = svatUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = astrodating;
+				TEST_TARGET_NAME = svat;
 			};
 			name = Debug;
 		};
@@ -826,19 +830,19 @@
 				DEVELOPMENT_TEAM = RSD67YH647;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ru.astrodatingUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = svatUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = astrodating;
+				TEST_TARGET_NAME = svat;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		94ABB4C02C2E869700370F39 /* Build configuration list for PBXProject "astrodating" */ = {
+		94ABB4C02C2E869700370F39 /* Build configuration list for PBXProject "svat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				94ABB4E72C2E869800370F39 /* Debug */,
@@ -847,7 +851,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		94ABB4E92C2E869800370F39 /* Build configuration list for PBXNativeTarget "astrodating" */ = {
+		94ABB4E92C2E869800370F39 /* Build configuration list for PBXNativeTarget "svat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				94ABB4EA2C2E869800370F39 /* Debug */,
@@ -856,7 +860,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		94ABB4EC2C2E869800370F39 /* Build configuration list for PBXNativeTarget "astrodatingTests" */ = {
+		94ABB4EC2C2E869800370F39 /* Build configuration list for PBXNativeTarget "svatTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				94ABB4ED2C2E869800370F39 /* Debug */,
@@ -865,7 +869,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		94ABB4EF2C2E869800370F39 /* Build configuration list for PBXNativeTarget "astrodatingUITests" */ = {
+		94ABB4EF2C2E869800370F39 /* Build configuration list for PBXNativeTarget "svatUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				94ABB4F02C2E869800370F39 /* Debug */,

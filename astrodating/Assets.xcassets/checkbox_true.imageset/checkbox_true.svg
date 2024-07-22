@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>checkbox_true</title>
-    <g id="checkbox_true" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <rect id="Rectangle-Copy" stroke="#05B5CD" stroke-width="6" x="6" y="6" width="20" height="20" rx="8"></rect>
-        <polyline id="Path-2" stroke="#FD80C3" stroke-width="6" points="9.40942328 15.5323124 16.0331823 20.3171682 22.8293694 8.31716815"></polyline>
-    </g>
-</svg>

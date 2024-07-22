@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct astrodatingApp: App {
+struct svatApp: App {
     @StateObject private var viewModel = EntryViewModel()
 
     var body: some Scene {
