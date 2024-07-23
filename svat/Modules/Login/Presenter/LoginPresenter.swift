@@ -30,6 +30,8 @@ import SwiftUI
 class LoginPresenter: ObservableObject {
     @Published var username: String = ""
     @Published var password: String = ""
+    @Published var showAlert: Bool = false
+    @Published var alertMessage: String = ""
 
     var interactor: LoginInteractorProtocol
 
@@ -38,6 +40,14 @@ class LoginPresenter: ObservableObject {
     }
 
     func login() {
-        interactor.login(username: username, password: password)
+        interactor.login(username: username, password: password) { success, message in
+            if success {
+                // Handle successful login
+            } else {
+                // Handle login failure
+                self.alertMessage = message
+                self.showAlert = true
+            }
+        }
     }
 }

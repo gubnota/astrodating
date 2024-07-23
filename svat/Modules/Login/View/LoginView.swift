@@ -7,27 +7,32 @@ struct LoginView: View {
         self.loginPresenter = loginPresenter
     }
 
-    
     var body: some View {
-          VStack {
-              TextField("Username", text: $loginPresenter.username)
-                  .styledTextField()
+        VStack {
+            TextField(LocalizedStringKey("Username"), text: $loginPresenter.username)
+                .styledTextField()
 
-              SecureField("Password", text: $loginPresenter.password)
-                  .styledTextField()
+            SecureField(LocalizedStringKey("Password"), text: $loginPresenter.password)
+                .styledTextField()
 
-              Button("Login") {
-                  loginPresenter.login()
-              }
-              .padding()
-          }
-          .padding()
-      }
+            Button(LocalizedStringKey("Login")) {
+                loginPresenter.login()
+            }
+            .padding()
+        }
+        .padding()
+        .alert(isPresented: $loginPresenter.showAlert) {
+            Alert(title: Text(LocalizedStringKey("Login Failed")),
+                  message: Text(loginPresenter.alertMessage),
+                  dismissButton: .default(Text(LocalizedStringKey("OK"))))
+        }
+    }
 }
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
+        // Provide a mock EntryPresenter for preview
         let mockEntryPresenter = EntryPresenter(interactor: EntryInteractor(), router: EntryRouter())
-        LoginAssembly.assemble(entryPresenter: mockEntryPresenter)
+        return LoginAssembly.assemble(entryPresenter: mockEntryPresenter)
     }
 }
