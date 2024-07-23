@@ -1,0 +1,679 @@
+{
+  "sourceLanguage" : "ru",
+  "strings" : {
+    "" : {
+
+    },
+    "%lld" : {
+
+    },
+    "%lld – %lld" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$lld – %2$lld"
+          }
+        }
+      }
+    },
+    "Astrological Sign: %@" : {
+
+    },
+    "Back to Login" : {
+
+    },
+    "Back to User List" : {
+
+    },
+    "Button" : {
+
+    },
+    "Chat" : {
+
+    },
+    "Chat with %@" : {
+
+    },
+    "Chinese Zodiac: %@" : {
+
+    },
+    "Enter message..." : {
+
+    },
+    "Facebook" : {
+
+    },
+    "Go to Chat" : {
+
+    },
+    "Go to Detail" : {
+
+    },
+    "Go to Profile" : {
+
+    },
+    "Instagram" : {
+
+    },
+    "Invalid Credentials" : {
+
+    },
+    "Login" : {
+
+    },
+    "Logout" : {
+
+    },
+    "Love Language: %@" : {
+
+    },
+    "Name: %@" : {
+
+    },
+    "OK" : {
+
+    },
+    "Password" : {
+
+    },
+    "Person Detail" : {
+
+    },
+    "Please try again" : {
+
+    },
+    "Profile" : {
+
+    },
+    "Region: %@" : {
+
+    },
+    "Register" : {
+
+    },
+    "Send" : {
+
+    },
+    "Skype" : {
+
+    },
+    "Surname: %@" : {
+
+    },
+    "Telegram" : {
+
+    },
+    "Title %lld" : {
+
+    },
+    "User List" : {
+
+    },
+    "Username" : {
+
+    },
+    "VK" : {
+
+    },
+    "Анкета" : {
+
+    },
+    "Астрологический знак" : {
+
+    },
+    "Астрологический знак и Китайский зодиак" : {
+
+    },
+    "Введите свои контакты" : {
+
+    },
+    "Вес (кг)" : {
+
+    },
+    "Войти" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Login"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Войти"
+          }
+        }
+      }
+    },
+    "Вредные привычки" : {
+
+    },
+    "Вредные Привычки" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bad Habits"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вредные Привычки"
+          }
+        }
+      }
+    },
+    "Второй язык любви" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Second Love Language"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Второй язык любви"
+          }
+        }
+      }
+    },
+    "Вход" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Login"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вход"
+          }
+        }
+      }
+    },
+    "Выберите основные языки любви" : {
+
+    },
+    "Выберите семейное положение" : {
+
+    },
+    "Выберите способ поиска партнера" : {
+
+    },
+    "Выберите фотографии" : {
+
+    },
+    "Выбрать фотографии" : {
+
+    },
+    "Выход" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Logout"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выход"
+          }
+        }
+      }
+    },
+    "Дата" : {
+
+    },
+    "Дата предыдущих отношений" : {
+
+    },
+    "День рождения" : {
+
+    },
+    "Дети" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Children"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Дети"
+          }
+        }
+      }
+    },
+    "Есть ли у вас вредные привычки?" : {
+
+    },
+    "Есть ли у вас дети?" : {
+
+    },
+    "Желаемый возраст партнера" : {
+
+    },
+    "Женский" : {
+
+    },
+    "Завершить" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Complete"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Завершить"
+          }
+        }
+      }
+    },
+    "Загрузить вопросы" : {
+
+    },
+    "Загрузка вопросов..." : {
+
+    },
+    "Запросы и пожелания" : {
+
+    },
+    "Знак зодиака" : {
+
+    },
+    "Знак Зодиака" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Astrological Sign"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Знак Зодиака"
+          }
+        }
+      }
+    },
+    "Знак зодиака бывшего(ей)" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your ex Astrological Sign"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Знак зодиака бывшего(ей)"
+          }
+        }
+      }
+    },
+    "Знак китайского зодиака бывшего(ей)" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your ex Chinese Zodiac sign"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Знак китайского зодиака бывшего(ей)"
+          }
+        }
+      }
+    },
+    "из" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "of"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "из"
+          }
+        }
+      }
+    },
+    "Имя" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Name"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Имя"
+          }
+        }
+      }
+    },
+    "Имя пользователя" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Username"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Имя пользователя"
+          }
+        }
+      }
+    },
+    "Китайский знак зодиака" : {
+
+    },
+    "Китайский зодиак" : {
+
+    },
+    "Китайский Зодиак" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chinese Zodiac"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Китайский Зодиак"
+          }
+        }
+      }
+    },
+    "Метод поиска" : {
+
+    },
+    "Метод Поиска Партнера" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Partner Search Method"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Метод Поиска Партнера"
+          }
+        }
+      }
+    },
+    "Мужской" : {
+
+    },
+    "Не было" : {
+
+    },
+    "Опишите своего бывшего партнера" : {
+
+    },
+    "Пароль" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Password"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пароль"
+          }
+        }
+      }
+    },
+    "Первый язык любви" : {
+
+    },
+    "Поиск региона" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Search Region"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Поиск региона"
+          }
+        }
+      }
+    },
+    "Пол" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gender"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пол"
+          }
+        }
+      }
+    },
+    "Профиль" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profile"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Профиль"
+          }
+        }
+      }
+    },
+    "Расскажите о себе" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tell us about yourself"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Расскажите о себе"
+          }
+        }
+      }
+    },
+    "Регион" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Region"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Регион"
+          }
+        }
+      }
+    },
+    "Регистрация" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Register"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Регистрация"
+          }
+        }
+      }
+    },
+    "Рост (см)" : {
+
+    },
+    "Семейное положение" : {
+
+    },
+    "Семейное Положение" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Marital Status"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Семейное Положение"
+          }
+        }
+      }
+    },
+    "След" : {
+
+    },
+    "Следующий" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Next"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Следующий"
+          }
+        }
+      }
+    },
+    "Содержимое" : {
+
+    },
+    "Телефон" : {
+
+    },
+    "Укажите рост и вес" : {
+
+    },
+    "Укажите свои предпочтения" : {
+
+    },
+    "Фамилия" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Surname"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Фамилия"
+          }
+        }
+      }
+    },
+    "Что такое языки любви?" : {
+
+    },
+    "Шаг" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Step"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Шаг"
+          }
+        }
+      }
+    },
+    "Шаг %lld из 15" : {
+
+    },
+    "Язык любви" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Love Language"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Язык любви"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
