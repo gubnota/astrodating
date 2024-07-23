@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct EntryView: View {
-    @ObservedObject var presenter: EntryPresenter
+    @EnvironmentObject var presenter: EntryPresenter
 
     var body: some View {
         NavigationView {
@@ -24,7 +24,7 @@ struct EntryView: View {
                         PersonDetailView(person: person)
                     }
                 default:
-                    LoginAssembly.assemble()
+                    LoginAssembly.assemble(entryPresenter: presenter)
                 }
             }
         }
@@ -37,6 +37,6 @@ struct EntryView: View {
 
 struct EntryView_Previews: PreviewProvider {
     static var previews: some View {
-        EntryView(presenter: EntryPresenter(interactor: EntryInteractor(), router: EntryRouter()))
+        EntryView().environmentObject(EntryPresenter(interactor: EntryInteractor(), router: EntryRouter()))
     }
 }

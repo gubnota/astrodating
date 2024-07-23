@@ -1,50 +1,33 @@
 import SwiftUI
 
 struct LoginView: View {
-    @ObservedObject var presenter: LoginPresenter
-    var router: LoginRouter
+    @ObservedObject var loginPresenter: LoginPresenter
+
+    init(loginPresenter: LoginPresenter) {
+        self.loginPresenter = loginPresenter
+    }
+
     
     var body: some View {
-        VStack {
-            Text(LocalizedStringKey("Вход"))
-                .font(.largeTitle)
-                .padding()
-            
-            TextField(LocalizedStringKey("Имя пользователя"), text: $presenter.username)
-                .padding()
-                .background(Color.gray.opacity(0.2))
-                .cornerRadius(5)
-            
-            SecureField(LocalizedStringKey("Пароль"), text: $presenter.password)
-                .padding()
-                .background(Color.gray.opacity(0.2))
-                .cornerRadius(5)
-            
-            Button(action: {
-                presenter.login()
-            }) {
-                Text(LocalizedStringKey("Войти"))
-                    .foregroundColor(.white)
-                    .padding()
-                    .background(Color.blue)
-                    .cornerRadius(5)
-            }
-            .padding()
-            
-            Button(action: {
-                router.navigateToRegister()
-            }) {
-                Text(LocalizedStringKey("Регистрация"))
-                    .foregroundColor(.blue)
-                    .padding()
-            }
-        }
-        .padding()
-    }
+          VStack {
+              TextField("Username", text: $loginPresenter.username)
+                  .styledTextField()
+
+              SecureField("Password", text: $loginPresenter.password)
+                  .styledTextField()
+
+              Button("Login") {
+                  loginPresenter.login()
+              }
+              .padding()
+          }
+          .padding()
+      }
 }
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginAssembly.assemble()
+        let mockEntryPresenter = EntryPresenter(interactor: EntryInteractor(), router: EntryRouter())
+        LoginAssembly.assemble(entryPresenter: mockEntryPresenter)
     }
 }

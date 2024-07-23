@@ -9,11 +9,14 @@ import SwiftUI
 
 @main
 struct myApp: App {
+    @StateObject private var presenter = EntryPresenter(interactor: EntryInteractor(), router: EntryRouter())
+
     var body: some Scene {
         WindowGroup {
             EntryAssembly.assemble()
-                .environmentObject(AppViewModel())
-                .ignoresSafeArea()
+                .environmentObject(presenter)
+                .edgesIgnoringSafeArea(.all)
         }
     }
 }
+

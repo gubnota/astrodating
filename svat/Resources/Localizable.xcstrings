@@ -132,6 +132,7 @@
 
     },
     "Войти" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -184,6 +185,7 @@
       }
     },
     "Вход" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -381,6 +383,7 @@
       }
     },
     "Имя пользователя" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -449,6 +452,7 @@
 
     },
     "Пароль" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -549,6 +553,7 @@
       }
     },
     "Регистрация" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -607,6 +612,9 @@
       }
     },
     "Содержимое" : {
+
+    },
+    "Содержимое текст" : {
 
     },
     "Телефон" : {

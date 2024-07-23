@@ -1,14 +1,22 @@
 import Foundation
 
-class LoginInteractor {
-    private let presenter: LoginPresenter
-    
-    init(presenter: LoginPresenter) {
-        self.presenter = presenter
+protocol LoginInteractorProtocol {
+    func login(username: String, password: String)
+}
+
+class LoginInteractor: LoginInteractorProtocol {
+    var entryPresenter: EntryPresenter
+
+    init(entryPresenter: EntryPresenter) {
+        self.entryPresenter = entryPresenter
     }
-    
+
     func login(username: String, password: String) {
         // Perform login logic
-        presenter.didLogin(success: true)
+        if username == "123" && password == "admin" {
+            entryPresenter.currentRoute = "list"
+        } else {
+            // Handle login failure
+        }
     }
 }
