@@ -1,0 +1,35 @@
+name: AstroDating
+options:
+  bundleIdPrefix: net.fenki
+configs:
+  debug:
+    buildSettings:
+      SWIFT_OPTIMIZATION_LEVEL: '-Onone'
+  release:
+    buildSettings:
+      SWIFT_OPTIMIZATION_LEVEL: '-Owholemodule'
+targets:
+  AstroDating:
+    type: application
+    platform: iOS
+    sources: [astrodating/]
+    resources: [astrodating/Assets.xcassets, astrodating/webchat]
+    info:
+      path: Info2.plist # Correct way to reference an existing Info.plist file
+    dependencies: []
+    settings:
+      base:
+        INFOPLIST_PREPROCESS: NO
+        INFOPLIST_FILE: "Info2.plist"
+  AstroDatingTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources: astrodatingTests
+    dependencies:
+      - target: AstroDating
+  AstroDatingUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources: astrodatingUITests
+    dependencies:
+      - target: AstroDating

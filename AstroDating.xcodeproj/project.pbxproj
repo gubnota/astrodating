@@ -1,0 +1,1059 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00055D27148BA484D34248D2 /* Part14View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74D1653530A39770DFD282B /* Part14View.swift */; };
+		01F8D468F9D0AF74733E0A9B /* astroSigns.json in Resources */ = {isa = PBXBuildFile; fileRef = 69D86A90D45F899F96C77392 /* astroSigns.json */; };
+		03C008CC159FCF9CBF21B1B0 /* Part12View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCCA86EADA04BF0348C574B /* Part12View.swift */; };
+		0857807EC467722A11136E8D /* Profile2View.swift in Resources */ = {isa = PBXBuildFile; fileRef = F418EB34D30ECBCA6348531F /* Profile2View.swift */; };
+		093F3C71BBEE9BBAF1E738A0 /* Part4View.swift in Resources */ = {isa = PBXBuildFile; fileRef = 481E923BA6F25E5923197B93 /* Part4View.swift */; };
+		0F86145588F7735E36AB0DCD /* Picker.swift in Resources */ = {isa = PBXBuildFile; fileRef = B57D61F4091B634F5EC5EDB8 /* Picker.swift */; };
+		1547022A4A2F0FA76E87051A /* Part3View.swift in Resources */ = {isa = PBXBuildFile; fileRef = 7B9353A6F72A8D4F5805E3C5 /* Part3View.swift */; };
+		15C2402A6E370CF153FD07E4 /* RegionSelectorView.swift in Resources */ = {isa = PBXBuildFile; fileRef = 114DAE00F6E2F6F602261861 /* RegionSelectorView.swift */; };
+		19D7812387DDE39E06756E3A /* dismissKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D8AEA1AB95F0178FBF5068 /* dismissKeyboard.swift */; };
+		1C554EBC43A4EF3CC4A68749 /* EntryVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296CA37B49ED81165138937E /* EntryVM.swift */; };
+		2330D17EE95D9B0669E4C29C /* GradientView.swift in Resources */ = {isa = PBXBuildFile; fileRef = C91C05B9F6B5D89E0CBA177B /* GradientView.swift */; };
+		236A7A4B21727952738C76B5 /* astrodatingApp.swift in Resources */ = {isa = PBXBuildFile; fileRef = 416F9233D01962F109995C43 /* astrodatingApp.swift */; };
+		243CA08FB75BC2258467D2BD /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2622096E94A02AA3D5ECC4B9 /* ProfileView.swift */; };
+		274805EB402E2AE2C8A98DE0 /* Font.swift in Resources */ = {isa = PBXBuildFile; fileRef = DB63D9E0A9271EEF86A7C8E7 /* Font.swift */; };
+		274F0C8A6BFA82BA659E320A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916AABD629537F6F1D9864D2 /* ContentView.swift */; };
+		2C55A88CE73F3EE640A50FAB /* User2ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1B7F58EAE76F84A77A9ED9 /* User2ListView.swift */; };
+		2DF91982841626F1BB8DFB29 /* Part11View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F913BAF8B3373700F7FE00F /* Part11View.swift */; };
+		2E3FA0F0A3E22A0118DCFB5F /* Part10View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A164ED8DA7E6F60513A8ED /* Part10View.swift */; };
+		324B313F5FAD50AF27419F95 /* Part14View.swift in Resources */ = {isa = PBXBuildFile; fileRef = F74D1653530A39770DFD282B /* Part14View.swift */; };
+		344E4ADF13A753B0F8167FE6 /* Part8View.swift in Resources */ = {isa = PBXBuildFile; fileRef = 5DD4C9388E4E4730DC81D871 /* Part8View.swift */; };
+		34F02D2564C25298261C2FAF /* QuestionnaireView.swift in Resources */ = {isa = PBXBuildFile; fileRef = 485F11BE0CB5956AA94F71BF /* QuestionnaireView.swift */; };
+		373D50584EA91506EE5DB5B5 /* Part6View.swift in Resources */ = {isa = PBXBuildFile; fileRef = 5D27D77456171EA6448221F0 /* Part6View.swift */; };
+		3897C12CB693AC9B06EDAC1B /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91C05B9F6B5D89E0CBA177B /* GradientView.swift */; };
+		38C17962584788ECA41F2C1A /* astrodatingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78197AA6DD9C45B418E11E8 /* astrodatingUITests.swift */; };
+		3A84B2FC9F1CC4C68666E3EA /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968DBD4E72635CDF21962E86 /* Person.swift */; };
+		3DC6966B317935D3651E6544 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4A0401E1C1BE3D47CD6DFC /* ChatView.swift */; };
+		3DF4B3F4C3C3F93DCD7056A2 /* Part7View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0746CE06D4A775CF169F4CDF /* Part7View.swift */; };
+		4368C95C09CA50715F191F0B /* partnerMethod.json in Resources */ = {isa = PBXBuildFile; fileRef = DD3D9A442FF6300170F8E98E /* partnerMethod.json */; };
+		4A1A9AF8A38941A8943A6A52 /* Entry2View.swift in Resources */ = {isa = PBXBuildFile; fileRef = C6FD435B39C05EEB336D8288 /* Entry2View.swift */; };
+		4BD1D79A0C1FB54D519A4004 /* Part1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D256CA36029873592CB33B36 /* Part1View.swift */; };
+		4CE75F499E51317B326C09FE /* QuestionnaireView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485F11BE0CB5956AA94F71BF /* QuestionnaireView.swift */; };
+		4D6DA63B23C033984ED28244 /* DatePicker.swift in Resources */ = {isa = PBXBuildFile; fileRef = D4D904574BC848E18D548953 /* DatePicker.swift */; };
+		4F0677F3F47D516C6E1FAB3A /* QuizView.swift in Resources */ = {isa = PBXBuildFile; fileRef = 3CCF47C3ACB525FED72757FA /* QuizView.swift */; };
+		4F8CD3D99C448A88F80F4790 /* TuistAssets+AstroDating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D8105C0BE74E2E37DB96CB /* TuistAssets+AstroDating.swift */; };
+		545281BC14BC125212E982C8 /* Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57D61F4091B634F5EC5EDB8 /* Picker.swift */; };
+		55C507DDAC1F24F177702FE1 /* regions.json in Resources */ = {isa = PBXBuildFile; fileRef = 37E004B7ED39C3C517301E05 /* regions.json */; };
+		57313522D4D82B7FA816501F /* Slide.swift in Resources */ = {isa = PBXBuildFile; fileRef = A72B0C9ADD37E4E0426FB542 /* Slide.swift */; };
+		587FDC6D073D4A0D96423039 /* UserListView.swift in Resources */ = {isa = PBXBuildFile; fileRef = 6CFF1860533E048572C34415 /* UserListView.swift */; };
+		5AA44B1985B590E8A48B223E /* QuizViewModel.swift in Resources */ = {isa = PBXBuildFile; fileRef = D8794DD1F8CE02F56BBBD20F /* QuizViewModel.swift */; };
+		5AA7C149B6FA27DCE99A38D3 /* RegionSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114DAE00F6E2F6F602261861 /* RegionSelectorView.swift */; };
+		5ACB7016735FA70DA320538A /* PersonDetailView.swift in Resources */ = {isa = PBXBuildFile; fileRef = 71A050593E65AF6AC69845D4 /* PersonDetailView.swift */; };
+		5E5FEFFCE2179F9BEE21C242 /* Entry2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FD435B39C05EEB336D8288 /* Entry2View.swift */; };
+		607BD39C5C31B5669ED7E666 /* Part11View.swift in Resources */ = {isa = PBXBuildFile; fileRef = 8F913BAF8B3373700F7FE00F /* Part11View.swift */; };
+		61BC98C2CCE59785072E0D2A /* Login2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1244EEB8247C32733F2D351E /* Login2View.swift */; };
+		63C4FD1F2C1BADE38D00B90D /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118D5719FDECEB2E33FF2A85 /* TextField.swift */; };
+		64B539D426EA940083DEAAB1 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD079FB1634EAC9D2F4A8C79 /* RegisterView.swift */; };
+		67B3BE528A87040C19450F40 /* Color.swift in Resources */ = {isa = PBXBuildFile; fileRef = 3168BF36B944A8562E06DCD0 /* Color.swift */; };
+		6946EB1C14DD541E7570BD17 /* PatternBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E890C643292C54B2601747 /* PatternBackgroundView.swift */; };
+		6AC18D845997980F85287B93 /* NavigationLinkModifier.swift in Resources */ = {isa = PBXBuildFile; fileRef = EAAB7FBDFD16BAD065780336 /* NavigationLinkModifier.swift */; };
+		6D383A5A09D391A26785AD7F /* Part10View.swift in Resources */ = {isa = PBXBuildFile; fileRef = 99A164ED8DA7E6F60513A8ED /* Part10View.swift */; };
+		6E433FA158108CE6BFF3745E /* Part6View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D27D77456171EA6448221F0 /* Part6View.swift */; };
+		6FC411E14C0A9EE7FFDBBAE0 /* Part13View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F453F38552314928FE8B8A3 /* Part13View.swift */; };
+		706DEEA8231827CB3849F1E4 /* QuizViewModel_ext.swift in Resources */ = {isa = PBXBuildFile; fileRef = D28053399D61D1F63A1F9E30 /* QuizViewModel_ext.swift */; };
+		70F403DBA88F3794ABA200F0 /* QuizViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8794DD1F8CE02F56BBBD20F /* QuizViewModel.swift */; };
+		7189D5EDA6C5E0194CB399AA /* hasChildren.json in Resources */ = {isa = PBXBuildFile; fileRef = 66F217BF1D02907B4C2B11FD /* hasChildren.json */; };
+		71E3174C3447DA9B82D9F5E1 /* chineseZodiacs.json in Resources */ = {isa = PBXBuildFile; fileRef = D34B79A8A02603F0EBCBB2CA /* chineseZodiacs.json */; };
+		73E65200F9F8E2AA334190FC /* dismissKeyboard.swift in Resources */ = {isa = PBXBuildFile; fileRef = F6D8AEA1AB95F0178FBF5068 /* dismissKeyboard.swift */; };
+		75A7F56DC7A0FBFF620E68D9 /* Part1View.swift in Resources */ = {isa = PBXBuildFile; fileRef = D256CA36029873592CB33B36 /* Part1View.swift */; };
+		7D382D19E3C787C9FB4C21F4 /* Part2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47385BE6D4E9B617A1CD3DF /* Part2View.swift */; };
+		7DF7DA76AA81D59FBD604BCB /* LoginView.swift in Resources */ = {isa = PBXBuildFile; fileRef = 6CF2AF28717AD9202DFE82D1 /* LoginView.swift */; };
+		7EB112F3AB43074164538452 /* sampleUsers.swift in Resources */ = {isa = PBXBuildFile; fileRef = B677EDBEC4EF3EE172C403E1 /* sampleUsers.swift */; };
+		7FE776FF553D0C04D5646566 /* astrodatingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AB4F96F975909EB49E6174 /* astrodatingTests.swift */; };
+		863C489B029B0648D22BEBC0 /* Part5View.swift in Resources */ = {isa = PBXBuildFile; fileRef = 2A541BF901B2B4C62E636410 /* Part5View.swift */; };
+		8D1D7F407687B4A8B767DC98 /* ChatView.swift in Resources */ = {isa = PBXBuildFile; fileRef = BE4A0401E1C1BE3D47CD6DFC /* ChatView.swift */; };
+		8D8B6FA03EA6A042F0B5606B /* TuistBundle+AstroDating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1544BB46C9B4A779F9181B38 /* TuistBundle+AstroDating.swift */; };
+		8FA13AB08B0D8B6F4FE0FDC8 /* PatternBackgroundView.swift in Resources */ = {isa = PBXBuildFile; fileRef = 87E890C643292C54B2601747 /* PatternBackgroundView.swift */; };
+		902CFCFDB4C83B790A649AFA /* Person2DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A99CD914DD20BA67EE1A9D8 /* Person2DetailView.swift */; };
+		90E24F58F886A69517D0062E /* EntryVM.swift in Resources */ = {isa = PBXBuildFile; fileRef = 296CA37B49ED81165138937E /* EntryVM.swift */; };
+		9F8D5F32C1A98B3C497A991A /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFF1860533E048572C34415 /* UserListView.swift */; };
+		A0A96BFA663DC5BD963CA30B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4140CF315C40CCF4ED9B182A /* Assets.xcassets */; };
+		A164D71B85BA606D2A87E086 /* Part12View.swift in Resources */ = {isa = PBXBuildFile; fileRef = DDCCA86EADA04BF0348C574B /* Part12View.swift */; };
+		A21FB1733055C5BFC4EB3E66 /* Person2DetailView.swift in Resources */ = {isa = PBXBuildFile; fileRef = 2A99CD914DD20BA67EE1A9D8 /* Person2DetailView.swift */; };
+		A30CC22F725AB5FBFAE8D536 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72B0C9ADD37E4E0426FB542 /* Slide.swift */; };
+		A8235C4E1CDC07B46308ADEA /* RegisterView.swift in Resources */ = {isa = PBXBuildFile; fileRef = CD079FB1634EAC9D2F4A8C79 /* RegisterView.swift */; };
+		A9101DAB15C1197BAB0719C1 /* Part9View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E47686D5E2691832518BAF /* Part9View.swift */; };
+		AE68A26B0424E37182297BA6 /* DatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D904574BC848E18D548953 /* DatePicker.swift */; };
+		B05E729E18B0BBC8F7CC43A0 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCF47C3ACB525FED72757FA /* QuizView.swift */; };
+		B19643C0BBD1CF0D1B7A2EA5 /* Part8View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD4C9388E4E4730DC81D871 /* Part8View.swift */; };
+		B1F20BCFC1C13DABD6C26AAC /* Part13View.swift in Resources */ = {isa = PBXBuildFile; fileRef = 6F453F38552314928FE8B8A3 /* Part13View.swift */; };
+		B62CD4513B89D410368011F8 /* Part2View.swift in Resources */ = {isa = PBXBuildFile; fileRef = F47385BE6D4E9B617A1CD3DF /* Part2View.swift */; };
+		B8B69E45832D375178D6D8BB /* Part15View.swift in Resources */ = {isa = PBXBuildFile; fileRef = F6EBC0762DBB2F8668319988 /* Part15View.swift */; };
+		B9AF77E9596572539DF18105 /* Chat2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C8560B6DE88A2E57C016BE /* Chat2View.swift */; };
+		BB0495253B35DEEE83BC3508 /* Part4View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481E923BA6F25E5923197B93 /* Part4View.swift */; };
+		BCC4381AE1A1876A863F2B5A /* notification.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DA04D38F5B0819A4E1F0A578 /* notification.m4a */; };
+		BED242C8D6520B310F2C1143 /* Register2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6417A95860A4C71EDC537F5A /* Register2View.swift */; };
+		C007AA7B3F374F73AFD473EE /* astrodatingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416F9233D01962F109995C43 /* astrodatingApp.swift */; };
+		C3FA7B98B0640C3C8B1CABC4 /* Part9View.swift in Resources */ = {isa = PBXBuildFile; fileRef = D3E47686D5E2691832518BAF /* Part9View.swift */; };
+		C4E185F243B10B988E53F796 /* Part3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9353A6F72A8D4F5805E3C5 /* Part3View.swift */; };
+		C77B1B6E42FAC3D2FE1ECBA6 /* QuizViewModel_ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28053399D61D1F63A1F9E30 /* QuizViewModel_ext.swift */; };
+		CA5CE04A702FA4E177A93163 /* TextField.swift in Resources */ = {isa = PBXBuildFile; fileRef = 118D5719FDECEB2E33FF2A85 /* TextField.swift */; };
+		CAC7813BD525EA2AC0E7A131 /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31A977F72B33FAAEF713F38 /* PhotoPicker.swift */; };
+		CB58CA04F7D8C5156AC0EA4D /* badHabits.json in Resources */ = {isa = PBXBuildFile; fileRef = A12FA4C9CA2D18B3018B0092 /* badHabits.json */; };
+		CDC1CF0D27BA9173C7EE16A8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF2AF28717AD9202DFE82D1 /* LoginView.swift */; };
+		CDEA7E1012667632D44FE404 /* PersonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A050593E65AF6AC69845D4 /* PersonDetailView.swift */; };
+		D235F5DF91764CEA25D9F0B4 /* Register2View.swift in Resources */ = {isa = PBXBuildFile; fileRef = 6417A95860A4C71EDC537F5A /* Register2View.swift */; };
+		D3E5D1DBC1BEBE79C2F61998 /* ProfileView.swift in Resources */ = {isa = PBXBuildFile; fileRef = 2622096E94A02AA3D5ECC4B9 /* ProfileView.swift */; };
+		D4B91805196217EDC886CD3A /* User2ListView.swift in Resources */ = {isa = PBXBuildFile; fileRef = 8B1B7F58EAE76F84A77A9ED9 /* User2ListView.swift */; };
+		D4C441795E71E7123B30A7A0 /* Person.swift in Resources */ = {isa = PBXBuildFile; fileRef = 968DBD4E72635CDF21962E86 /* Person.swift */; };
+		D60BB146B1E54D79E7F22C68 /* Part5View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A541BF901B2B4C62E636410 /* Part5View.swift */; };
+		D6858F6AE9846C1EFD869E91 /* NavigationLinkModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAB7FBDFD16BAD065780336 /* NavigationLinkModifier.swift */; };
+		D8FCA8EE658B2682A20A545E /* astrodatingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED36DAF6372151D7C0838F2 /* astrodatingUITestsLaunchTests.swift */; };
+		D94B1A0C0D4DC0EF9231F816 /* PhotoPicker.swift in Resources */ = {isa = PBXBuildFile; fileRef = E31A977F72B33FAAEF713F38 /* PhotoPicker.swift */; };
+		DF995BFF7E0762426E3B3034 /* Part7View.swift in Resources */ = {isa = PBXBuildFile; fileRef = 0746CE06D4A775CF169F4CDF /* Part7View.swift */; };
+		E0026F7303F9827F29DDA81C /* Profile2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F418EB34D30ECBCA6348531F /* Profile2View.swift */; };
+		E088378F77F381A9653BEF2B /* ContentView.swift in Resources */ = {isa = PBXBuildFile; fileRef = 916AABD629537F6F1D9864D2 /* ContentView.swift */; };
+		E4F3BB729A69FB09AC650F88 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB63D9E0A9271EEF86A7C8E7 /* Font.swift */; };
+		E8DF76CDD4F259A1338C62E7 /* maritalStatus.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F034FBEC101E6B3FAE9E869 /* maritalStatus.json */; };
+		ED07F19A8F4B15161E991CDA /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3168BF36B944A8562E06DCD0 /* Color.swift */; };
+		EED343478A3D44ACD63A9E53 /* Login2View.swift in Resources */ = {isa = PBXBuildFile; fileRef = 1244EEB8247C32733F2D351E /* Login2View.swift */; };
+		EF62D925DDD1BFED3202076A /* loveLanguages.json in Resources */ = {isa = PBXBuildFile; fileRef = 175220AC8ED0013ACDDDA0A4 /* loveLanguages.json */; };
+		F15C0BC5BE9B3D760654D9D5 /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD78E1A0C0CFAF9037ECC5A4 /* EntryView.swift */; };
+		F16647B0FE3879B88D0134B2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 464DB24DB7D89B3F792E4B38 /* Preview Assets.xcassets */; };
+		F602EC6D9430489C0DE193AB /* Chat2View.swift in Resources */ = {isa = PBXBuildFile; fileRef = 40C8560B6DE88A2E57C016BE /* Chat2View.swift */; };
+		F673F0C8E71C3AFB516578D7 /* EntryView.swift in Resources */ = {isa = PBXBuildFile; fileRef = AD78E1A0C0CFAF9037ECC5A4 /* EntryView.swift */; };
+		F83C4DEF53CEEC08C8F6981F /* Part15View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EBC0762DBB2F8668319988 /* Part15View.swift */; };
+		FE3A57C630ED81FFD2614908 /* sampleUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B677EDBEC4EF3EE172C403E1 /* sampleUsers.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		06B887762A68028C60BE5415 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E87630266C6D3CC3245D02F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 476D8DA8057019A55B4E9E27;
+			remoteInfo = AstroDating;
+		};
+		F38D2E1898CDBAFBFC361E48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E87630266C6D3CC3245D02F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 476D8DA8057019A55B4E9E27;
+			remoteInfo = AstroDating;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0D0CE26864EC96507F80C040 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B4B2AE85199C5E8632CD901 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F79BE919A4273188E4C1D524 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0746CE06D4A775CF169F4CDF /* Part7View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part7View.swift; sourceTree = "<group>"; };
+		114DAE00F6E2F6F602261861 /* RegionSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionSelectorView.swift; sourceTree = "<group>"; };
+		118D5719FDECEB2E33FF2A85 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		1244EEB8247C32733F2D351E /* Login2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login2View.swift; sourceTree = "<group>"; };
+		1544BB46C9B4A779F9181B38 /* TuistBundle+AstroDating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+AstroDating.swift"; sourceTree = "<group>"; };
+		175220AC8ED0013ACDDDA0A4 /* loveLanguages.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = loveLanguages.json; sourceTree = "<group>"; };
+		191F3967954D9F6DB87A1C06 /* AstroDatingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AstroDatingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F034FBEC101E6B3FAE9E869 /* maritalStatus.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = maritalStatus.json; sourceTree = "<group>"; };
+		2622096E94A02AA3D5ECC4B9 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		296CA37B49ED81165138937E /* EntryVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryVM.swift; sourceTree = "<group>"; };
+		2A541BF901B2B4C62E636410 /* Part5View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part5View.swift; sourceTree = "<group>"; };
+		2A99CD914DD20BA67EE1A9D8 /* Person2DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person2DetailView.swift; sourceTree = "<group>"; };
+		3168BF36B944A8562E06DCD0 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		37E004B7ED39C3C517301E05 /* regions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = regions.json; sourceTree = "<group>"; };
+		3CCF47C3ACB525FED72757FA /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		3ED36DAF6372151D7C0838F2 /* astrodatingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = astrodatingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		40C8560B6DE88A2E57C016BE /* Chat2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat2View.swift; sourceTree = "<group>"; };
+		4140CF315C40CCF4ED9B182A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		416F9233D01962F109995C43 /* astrodatingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = astrodatingApp.swift; sourceTree = "<group>"; };
+		464DB24DB7D89B3F792E4B38 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		481E923BA6F25E5923197B93 /* Part4View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part4View.swift; sourceTree = "<group>"; };
+		485F11BE0CB5956AA94F71BF /* QuestionnaireView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionnaireView.swift; sourceTree = "<group>"; };
+		5D27D77456171EA6448221F0 /* Part6View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part6View.swift; sourceTree = "<group>"; };
+		5DD4C9388E4E4730DC81D871 /* Part8View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part8View.swift; sourceTree = "<group>"; };
+		6417A95860A4C71EDC537F5A /* Register2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register2View.swift; sourceTree = "<group>"; };
+		66F217BF1D02907B4C2B11FD /* hasChildren.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = hasChildren.json; sourceTree = "<group>"; };
+		68D8105C0BE74E2E37DB96CB /* TuistAssets+AstroDating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistAssets+AstroDating.swift"; sourceTree = "<group>"; };
+		69D86A90D45F899F96C77392 /* astroSigns.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = astroSigns.json; sourceTree = "<group>"; };
+		6CF2AF28717AD9202DFE82D1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		6CFF1860533E048572C34415 /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
+		6F453F38552314928FE8B8A3 /* Part13View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part13View.swift; sourceTree = "<group>"; };
+		71A050593E65AF6AC69845D4 /* PersonDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailView.swift; sourceTree = "<group>"; };
+		7B9353A6F72A8D4F5805E3C5 /* Part3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part3View.swift; sourceTree = "<group>"; };
+		87E890C643292C54B2601747 /* PatternBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternBackgroundView.swift; sourceTree = "<group>"; };
+		8B1B7F58EAE76F84A77A9ED9 /* User2ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User2ListView.swift; sourceTree = "<group>"; };
+		8F913BAF8B3373700F7FE00F /* Part11View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part11View.swift; sourceTree = "<group>"; };
+		916AABD629537F6F1D9864D2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		93D2142F3E0C7B4646DBAEC8 /* AstroDating-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "AstroDating-Info.plist"; sourceTree = "<group>"; };
+		9523C98C687BD5A6A4CA4F4D /* AstroDatingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "AstroDatingTests-Info.plist"; sourceTree = "<group>"; };
+		968DBD4E72635CDF21962E86 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		99A164ED8DA7E6F60513A8ED /* Part10View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part10View.swift; sourceTree = "<group>"; };
+		A12FA4C9CA2D18B3018B0092 /* badHabits.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = badHabits.json; sourceTree = "<group>"; };
+		A72B0C9ADD37E4E0426FB542 /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
+		ABF31102C8CDB7D6DBC9A13A /* AstroDatingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AstroDatingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD78E1A0C0CFAF9037ECC5A4 /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
+		B09B355D9A1DCB96C8FCF973 /* AstroDatingUITests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "AstroDatingUITests-Info.plist"; sourceTree = "<group>"; };
+		B2AB4F96F975909EB49E6174 /* astrodatingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = astrodatingTests.swift; sourceTree = "<group>"; };
+		B57D61F4091B634F5EC5EDB8 /* Picker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picker.swift; sourceTree = "<group>"; };
+		B677EDBEC4EF3EE172C403E1 /* sampleUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sampleUsers.swift; sourceTree = "<group>"; };
+		BE4A0401E1C1BE3D47CD6DFC /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		C043928BDAE623B070D937BC /* AstroDating.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AstroDating.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6FD435B39C05EEB336D8288 /* Entry2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry2View.swift; sourceTree = "<group>"; };
+		C91C05B9F6B5D89E0CBA177B /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		CD079FB1634EAC9D2F4A8C79 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		D256CA36029873592CB33B36 /* Part1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part1View.swift; sourceTree = "<group>"; };
+		D28053399D61D1F63A1F9E30 /* QuizViewModel_ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewModel_ext.swift; sourceTree = "<group>"; };
+		D34B79A8A02603F0EBCBB2CA /* chineseZodiacs.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = chineseZodiacs.json; sourceTree = "<group>"; };
+		D3E47686D5E2691832518BAF /* Part9View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part9View.swift; sourceTree = "<group>"; };
+		D4D904574BC848E18D548953 /* DatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePicker.swift; sourceTree = "<group>"; };
+		D8794DD1F8CE02F56BBBD20F /* QuizViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewModel.swift; sourceTree = "<group>"; };
+		DA04D38F5B0819A4E1F0A578 /* notification.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = notification.m4a; sourceTree = "<group>"; };
+		DB63D9E0A9271EEF86A7C8E7 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		DD3D9A442FF6300170F8E98E /* partnerMethod.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = partnerMethod.json; sourceTree = "<group>"; };
+		DDCCA86EADA04BF0348C574B /* Part12View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part12View.swift; sourceTree = "<group>"; };
+		E31A977F72B33FAAEF713F38 /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
+		EAAB7FBDFD16BAD065780336 /* NavigationLinkModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLinkModifier.swift; sourceTree = "<group>"; };
+		F418EB34D30ECBCA6348531F /* Profile2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile2View.swift; sourceTree = "<group>"; };
+		F47385BE6D4E9B617A1CD3DF /* Part2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part2View.swift; sourceTree = "<group>"; };
+		F6D8AEA1AB95F0178FBF5068 /* dismissKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dismissKeyboard.swift; sourceTree = "<group>"; };
+		F6EBC0762DBB2F8668319988 /* Part15View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part15View.swift; sourceTree = "<group>"; };
+		F74D1653530A39770DFD282B /* Part14View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part14View.swift; sourceTree = "<group>"; };
+		F78197AA6DD9C45B418E11E8 /* astrodatingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = astrodatingUITests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42F30694870894044183995E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9E84FAAE36040E64BE51763 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB0B06611D158F0B5B01BA08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14FFC5FADCAFC4DF4759A8AB /* Derived */ = {
+			isa = PBXGroup;
+			children = (
+				A52D96A027A0ED2DD7B4E69F /* InfoPlists */,
+				248B15C4130C930BB7382166 /* Sources */,
+			);
+			path = Derived;
+			sourceTree = "<group>";
+		};
+		248B15C4130C930BB7382166 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				68D8105C0BE74E2E37DB96CB /* TuistAssets+AstroDating.swift */,
+				1544BB46C9B4A779F9181B38 /* TuistBundle+AstroDating.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		28C80D832E0C983A77B9C49E = {
+			isa = PBXGroup;
+			children = (
+				9DA5E41EC55ECF04C6D54AC5 /* Project */,
+				4448353F0D6B818204F1E8E9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3D59916832ACC95F13F7CE29 /* routing */ = {
+			isa = PBXGroup;
+			children = (
+				40C8560B6DE88A2E57C016BE /* Chat2View.swift */,
+				C6FD435B39C05EEB336D8288 /* Entry2View.swift */,
+				296CA37B49ED81165138937E /* EntryVM.swift */,
+				1244EEB8247C32733F2D351E /* Login2View.swift */,
+				2A99CD914DD20BA67EE1A9D8 /* Person2DetailView.swift */,
+				F418EB34D30ECBCA6348531F /* Profile2View.swift */,
+				6417A95860A4C71EDC537F5A /* Register2View.swift */,
+				8B1B7F58EAE76F84A77A9ED9 /* User2ListView.swift */,
+			);
+			path = routing;
+			sourceTree = "<group>";
+		};
+		3E8EC16D7106E8315F42AFBC /* astrodating */ = {
+			isa = PBXGroup;
+			children = (
+				E678711ACD792781955A10D1 /* data */,
+				ED3F372335E104D4C22EB582 /* Preview Content */,
+				C0CE6D98D2EC5F3A6A2B6F4E /* Questionnaire */,
+				3D59916832ACC95F13F7CE29 /* routing */,
+				461275E6C2B8868F8ED2ABB7 /* UI */,
+				DBB05186E6702F9CC2BAE393 /* User */,
+				DD07C1228F2ED7E854B82164 /* webchat */,
+				4140CF315C40CCF4ED9B182A /* Assets.xcassets */,
+				416F9233D01962F109995C43 /* astrodatingApp.swift */,
+				916AABD629537F6F1D9864D2 /* ContentView.swift */,
+				AD78E1A0C0CFAF9037ECC5A4 /* EntryView.swift */,
+				485F11BE0CB5956AA94F71BF /* QuestionnaireView.swift */,
+				A72B0C9ADD37E4E0426FB542 /* Slide.swift */,
+			);
+			path = astrodating;
+			sourceTree = "<group>";
+		};
+		4448353F0D6B818204F1E8E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C043928BDAE623B070D937BC /* AstroDating.app */,
+				191F3967954D9F6DB87A1C06 /* AstroDatingTests.xctest */,
+				ABF31102C8CDB7D6DBC9A13A /* AstroDatingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		461275E6C2B8868F8ED2ABB7 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3168BF36B944A8562E06DCD0 /* Color.swift */,
+				D4D904574BC848E18D548953 /* DatePicker.swift */,
+				F6D8AEA1AB95F0178FBF5068 /* dismissKeyboard.swift */,
+				DB63D9E0A9271EEF86A7C8E7 /* Font.swift */,
+				C91C05B9F6B5D89E0CBA177B /* GradientView.swift */,
+				87E890C643292C54B2601747 /* PatternBackgroundView.swift */,
+				E31A977F72B33FAAEF713F38 /* PhotoPicker.swift */,
+				B57D61F4091B634F5EC5EDB8 /* Picker.swift */,
+				114DAE00F6E2F6F602261861 /* RegionSelectorView.swift */,
+				118D5719FDECEB2E33FF2A85 /* TextField.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		4EB2958926B00F0BFD13794B /* astrodatingTests */ = {
+			isa = PBXGroup;
+			children = (
+				B2AB4F96F975909EB49E6174 /* astrodatingTests.swift */,
+			);
+			path = astrodatingTests;
+			sourceTree = "<group>";
+		};
+		9DA5E41EC55ECF04C6D54AC5 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				3E8EC16D7106E8315F42AFBC /* astrodating */,
+				4EB2958926B00F0BFD13794B /* astrodatingTests */,
+				E97EFC79DE5E53BDC2F460A1 /* astrodatingUITests */,
+				14FFC5FADCAFC4DF4759A8AB /* Derived */,
+			);
+			name = Project;
+			sourceTree = "<group>";
+		};
+		A52D96A027A0ED2DD7B4E69F /* InfoPlists */ = {
+			isa = PBXGroup;
+			children = (
+				93D2142F3E0C7B4646DBAEC8 /* AstroDating-Info.plist */,
+				9523C98C687BD5A6A4CA4F4D /* AstroDatingTests-Info.plist */,
+				B09B355D9A1DCB96C8FCF973 /* AstroDatingUITests-Info.plist */,
+			);
+			path = InfoPlists;
+			sourceTree = "<group>";
+		};
+		C0CE6D98D2EC5F3A6A2B6F4E /* Questionnaire */ = {
+			isa = PBXGroup;
+			children = (
+				D256CA36029873592CB33B36 /* Part1View.swift */,
+				F47385BE6D4E9B617A1CD3DF /* Part2View.swift */,
+				7B9353A6F72A8D4F5805E3C5 /* Part3View.swift */,
+				481E923BA6F25E5923197B93 /* Part4View.swift */,
+				2A541BF901B2B4C62E636410 /* Part5View.swift */,
+				5D27D77456171EA6448221F0 /* Part6View.swift */,
+				0746CE06D4A775CF169F4CDF /* Part7View.swift */,
+				5DD4C9388E4E4730DC81D871 /* Part8View.swift */,
+				D3E47686D5E2691832518BAF /* Part9View.swift */,
+				99A164ED8DA7E6F60513A8ED /* Part10View.swift */,
+				8F913BAF8B3373700F7FE00F /* Part11View.swift */,
+				DDCCA86EADA04BF0348C574B /* Part12View.swift */,
+				6F453F38552314928FE8B8A3 /* Part13View.swift */,
+				F74D1653530A39770DFD282B /* Part14View.swift */,
+				F6EBC0762DBB2F8668319988 /* Part15View.swift */,
+				3CCF47C3ACB525FED72757FA /* QuizView.swift */,
+			);
+			path = Questionnaire;
+			sourceTree = "<group>";
+		};
+		DBB05186E6702F9CC2BAE393 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				BE4A0401E1C1BE3D47CD6DFC /* ChatView.swift */,
+				6CF2AF28717AD9202DFE82D1 /* LoginView.swift */,
+				EAAB7FBDFD16BAD065780336 /* NavigationLinkModifier.swift */,
+				71A050593E65AF6AC69845D4 /* PersonDetailView.swift */,
+				2622096E94A02AA3D5ECC4B9 /* ProfileView.swift */,
+				CD079FB1634EAC9D2F4A8C79 /* RegisterView.swift */,
+				B677EDBEC4EF3EE172C403E1 /* sampleUsers.swift */,
+				6CFF1860533E048572C34415 /* UserListView.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		DD07C1228F2ED7E854B82164 /* webchat */ = {
+			isa = PBXGroup;
+			children = (
+				DA04D38F5B0819A4E1F0A578 /* notification.m4a */,
+			);
+			path = webchat;
+			sourceTree = "<group>";
+		};
+		E678711ACD792781955A10D1 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				69D86A90D45F899F96C77392 /* astroSigns.json */,
+				A12FA4C9CA2D18B3018B0092 /* badHabits.json */,
+				D34B79A8A02603F0EBCBB2CA /* chineseZodiacs.json */,
+				66F217BF1D02907B4C2B11FD /* hasChildren.json */,
+				175220AC8ED0013ACDDDA0A4 /* loveLanguages.json */,
+				1F034FBEC101E6B3FAE9E869 /* maritalStatus.json */,
+				DD3D9A442FF6300170F8E98E /* partnerMethod.json */,
+				968DBD4E72635CDF21962E86 /* Person.swift */,
+				D28053399D61D1F63A1F9E30 /* QuizViewModel_ext.swift */,
+				D8794DD1F8CE02F56BBBD20F /* QuizViewModel.swift */,
+				37E004B7ED39C3C517301E05 /* regions.json */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		E97EFC79DE5E53BDC2F460A1 /* astrodatingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F78197AA6DD9C45B418E11E8 /* astrodatingUITests.swift */,
+				3ED36DAF6372151D7C0838F2 /* astrodatingUITestsLaunchTests.swift */,
+			);
+			path = astrodatingUITests;
+			sourceTree = "<group>";
+		};
+		ED3F372335E104D4C22EB582 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				464DB24DB7D89B3F792E4B38 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		15EFC7232937D8D520942F3F /* AstroDatingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85D3F4D8931E6176AE7679D1 /* Build configuration list for PBXNativeTarget "AstroDatingTests" */;
+			buildPhases = (
+				C67A03A168C581230FE3A105 /* Sources */,
+				DD264F199C04F509191E25BC /* Resources */,
+				2B4B2AE85199C5E8632CD901 /* Embed Frameworks */,
+				42F30694870894044183995E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49901D71749C1D3B761AA93A /* PBXTargetDependency */,
+			);
+			name = AstroDatingTests;
+			productName = AstroDatingTests;
+			productReference = 191F3967954D9F6DB87A1C06 /* AstroDatingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		476D8DA8057019A55B4E9E27 /* AstroDating */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DA1EB2E94F04CF5A9477898 /* Build configuration list for PBXNativeTarget "AstroDating" */;
+			buildPhases = (
+				8E032C75D81A4B0E4FDA178A /* Sources */,
+				08B22AE3797DCED349C6C618 /* Resources */,
+				0D0CE26864EC96507F80C040 /* Embed Frameworks */,
+				EB0B06611D158F0B5B01BA08 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AstroDating;
+			productName = AstroDating;
+			productReference = C043928BDAE623B070D937BC /* AstroDating.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5A71DA0DEA64577D02C6476D /* AstroDatingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68E141EA77B964EEF9621BC0 /* Build configuration list for PBXNativeTarget "AstroDatingUITests" */;
+			buildPhases = (
+				B4F086F61930498C0D33841C /* Sources */,
+				8CFB6CE10E5D228400D89778 /* Resources */,
+				F79BE919A4273188E4C1D524 /* Embed Frameworks */,
+				D9E84FAAE36040E64BE51763 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC93B05E488AC64694D33660 /* PBXTargetDependency */,
+			);
+			name = AstroDatingUITests;
+			productName = AstroDatingUITests;
+			productReference = ABF31102C8CDB7D6DBC9A13A /* AstroDatingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E87630266C6D3CC3245D02F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				ORGANIZATIONNAME = net.fenki;
+				TargetAttributes = {
+					15EFC7232937D8D520942F3F = {
+						TestTargetID = 476D8DA8057019A55B4E9E27;
+					};
+					5A71DA0DEA64577D02C6476D = {
+						TestTargetID = 476D8DA8057019A55B4E9E27;
+					};
+				};
+			};
+			buildConfigurationList = 121408516562D8A783200540 /* Build configuration list for PBXProject "AstroDating" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 28C80D832E0C983A77B9C49E;
+			productRefGroup = 4448353F0D6B818204F1E8E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				476D8DA8057019A55B4E9E27 /* AstroDating */,
+				15EFC7232937D8D520942F3F /* AstroDatingTests */,
+				5A71DA0DEA64577D02C6476D /* AstroDatingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		08B22AE3797DCED349C6C618 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0A96BFA663DC5BD963CA30B /* Assets.xcassets in Resources */,
+				E088378F77F381A9653BEF2B /* ContentView.swift in Resources */,
+				F673F0C8E71C3AFB516578D7 /* EntryView.swift in Resources */,
+				F16647B0FE3879B88D0134B2 /* Preview Assets.xcassets in Resources */,
+				6D383A5A09D391A26785AD7F /* Part10View.swift in Resources */,
+				607BD39C5C31B5669ED7E666 /* Part11View.swift in Resources */,
+				A164D71B85BA606D2A87E086 /* Part12View.swift in Resources */,
+				B1F20BCFC1C13DABD6C26AAC /* Part13View.swift in Resources */,
+				324B313F5FAD50AF27419F95 /* Part14View.swift in Resources */,
+				B8B69E45832D375178D6D8BB /* Part15View.swift in Resources */,
+				75A7F56DC7A0FBFF620E68D9 /* Part1View.swift in Resources */,
+				B62CD4513B89D410368011F8 /* Part2View.swift in Resources */,
+				1547022A4A2F0FA76E87051A /* Part3View.swift in Resources */,
+				093F3C71BBEE9BBAF1E738A0 /* Part4View.swift in Resources */,
+				863C489B029B0648D22BEBC0 /* Part5View.swift in Resources */,
+				373D50584EA91506EE5DB5B5 /* Part6View.swift in Resources */,
+				DF995BFF7E0762426E3B3034 /* Part7View.swift in Resources */,
+				344E4ADF13A753B0F8167FE6 /* Part8View.swift in Resources */,
+				C3FA7B98B0640C3C8B1CABC4 /* Part9View.swift in Resources */,
+				4F0677F3F47D516C6E1FAB3A /* QuizView.swift in Resources */,
+				34F02D2564C25298261C2FAF /* QuestionnaireView.swift in Resources */,
+				57313522D4D82B7FA816501F /* Slide.swift in Resources */,
+				67B3BE528A87040C19450F40 /* Color.swift in Resources */,
+				4D6DA63B23C033984ED28244 /* DatePicker.swift in Resources */,
+				274805EB402E2AE2C8A98DE0 /* Font.swift in Resources */,
+				2330D17EE95D9B0669E4C29C /* GradientView.swift in Resources */,
+				8FA13AB08B0D8B6F4FE0FDC8 /* PatternBackgroundView.swift in Resources */,
+				D94B1A0C0D4DC0EF9231F816 /* PhotoPicker.swift in Resources */,
+				0F86145588F7735E36AB0DCD /* Picker.swift in Resources */,
+				15C2402A6E370CF153FD07E4 /* RegionSelectorView.swift in Resources */,
+				CA5CE04A702FA4E177A93163 /* TextField.swift in Resources */,
+				73E65200F9F8E2AA334190FC /* dismissKeyboard.swift in Resources */,
+				8D1D7F407687B4A8B767DC98 /* ChatView.swift in Resources */,
+				7DF7DA76AA81D59FBD604BCB /* LoginView.swift in Resources */,
+				6AC18D845997980F85287B93 /* NavigationLinkModifier.swift in Resources */,
+				5ACB7016735FA70DA320538A /* PersonDetailView.swift in Resources */,
+				D3E5D1DBC1BEBE79C2F61998 /* ProfileView.swift in Resources */,
+				A8235C4E1CDC07B46308ADEA /* RegisterView.swift in Resources */,
+				587FDC6D073D4A0D96423039 /* UserListView.swift in Resources */,
+				7EB112F3AB43074164538452 /* sampleUsers.swift in Resources */,
+				236A7A4B21727952738C76B5 /* astrodatingApp.swift in Resources */,
+				D4C441795E71E7123B30A7A0 /* Person.swift in Resources */,
+				5AA44B1985B590E8A48B223E /* QuizViewModel.swift in Resources */,
+				706DEEA8231827CB3849F1E4 /* QuizViewModel_ext.swift in Resources */,
+				01F8D468F9D0AF74733E0A9B /* astroSigns.json in Resources */,
+				CB58CA04F7D8C5156AC0EA4D /* badHabits.json in Resources */,
+				71E3174C3447DA9B82D9F5E1 /* chineseZodiacs.json in Resources */,
+				7189D5EDA6C5E0194CB399AA /* hasChildren.json in Resources */,
+				EF62D925DDD1BFED3202076A /* loveLanguages.json in Resources */,
+				E8DF76CDD4F259A1338C62E7 /* maritalStatus.json in Resources */,
+				4368C95C09CA50715F191F0B /* partnerMethod.json in Resources */,
+				55C507DDAC1F24F177702FE1 /* regions.json in Resources */,
+				F602EC6D9430489C0DE193AB /* Chat2View.swift in Resources */,
+				4A1A9AF8A38941A8943A6A52 /* Entry2View.swift in Resources */,
+				90E24F58F886A69517D0062E /* EntryVM.swift in Resources */,
+				EED343478A3D44ACD63A9E53 /* Login2View.swift in Resources */,
+				A21FB1733055C5BFC4EB3E66 /* Person2DetailView.swift in Resources */,
+				0857807EC467722A11136E8D /* Profile2View.swift in Resources */,
+				D235F5DF91764CEA25D9F0B4 /* Register2View.swift in Resources */,
+				D4B91805196217EDC886CD3A /* User2ListView.swift in Resources */,
+				BCC4381AE1A1876A863F2B5A /* notification.m4a in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CFB6CE10E5D228400D89778 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD264F199C04F509191E25BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E032C75D81A4B0E4FDA178A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F8CD3D99C448A88F80F4790 /* TuistAssets+AstroDating.swift in Sources */,
+				8D8B6FA03EA6A042F0B5606B /* TuistBundle+AstroDating.swift in Sources */,
+				274F0C8A6BFA82BA659E320A /* ContentView.swift in Sources */,
+				F15C0BC5BE9B3D760654D9D5 /* EntryView.swift in Sources */,
+				2E3FA0F0A3E22A0118DCFB5F /* Part10View.swift in Sources */,
+				2DF91982841626F1BB8DFB29 /* Part11View.swift in Sources */,
+				03C008CC159FCF9CBF21B1B0 /* Part12View.swift in Sources */,
+				6FC411E14C0A9EE7FFDBBAE0 /* Part13View.swift in Sources */,
+				00055D27148BA484D34248D2 /* Part14View.swift in Sources */,
+				F83C4DEF53CEEC08C8F6981F /* Part15View.swift in Sources */,
+				4BD1D79A0C1FB54D519A4004 /* Part1View.swift in Sources */,
+				7D382D19E3C787C9FB4C21F4 /* Part2View.swift in Sources */,
+				C4E185F243B10B988E53F796 /* Part3View.swift in Sources */,
+				BB0495253B35DEEE83BC3508 /* Part4View.swift in Sources */,
+				D60BB146B1E54D79E7F22C68 /* Part5View.swift in Sources */,
+				6E433FA158108CE6BFF3745E /* Part6View.swift in Sources */,
+				3DF4B3F4C3C3F93DCD7056A2 /* Part7View.swift in Sources */,
+				B19643C0BBD1CF0D1B7A2EA5 /* Part8View.swift in Sources */,
+				A9101DAB15C1197BAB0719C1 /* Part9View.swift in Sources */,
+				B05E729E18B0BBC8F7CC43A0 /* QuizView.swift in Sources */,
+				4CE75F499E51317B326C09FE /* QuestionnaireView.swift in Sources */,
+				A30CC22F725AB5FBFAE8D536 /* Slide.swift in Sources */,
+				ED07F19A8F4B15161E991CDA /* Color.swift in Sources */,
+				AE68A26B0424E37182297BA6 /* DatePicker.swift in Sources */,
+				E4F3BB729A69FB09AC650F88 /* Font.swift in Sources */,
+				3897C12CB693AC9B06EDAC1B /* GradientView.swift in Sources */,
+				6946EB1C14DD541E7570BD17 /* PatternBackgroundView.swift in Sources */,
+				CAC7813BD525EA2AC0E7A131 /* PhotoPicker.swift in Sources */,
+				545281BC14BC125212E982C8 /* Picker.swift in Sources */,
+				5AA7C149B6FA27DCE99A38D3 /* RegionSelectorView.swift in Sources */,
+				63C4FD1F2C1BADE38D00B90D /* TextField.swift in Sources */,
+				19D7812387DDE39E06756E3A /* dismissKeyboard.swift in Sources */,
+				3DC6966B317935D3651E6544 /* ChatView.swift in Sources */,
+				CDC1CF0D27BA9173C7EE16A8 /* LoginView.swift in Sources */,
+				D6858F6AE9846C1EFD869E91 /* NavigationLinkModifier.swift in Sources */,
+				CDEA7E1012667632D44FE404 /* PersonDetailView.swift in Sources */,
+				243CA08FB75BC2258467D2BD /* ProfileView.swift in Sources */,
+				64B539D426EA940083DEAAB1 /* RegisterView.swift in Sources */,
+				9F8D5F32C1A98B3C497A991A /* UserListView.swift in Sources */,
+				FE3A57C630ED81FFD2614908 /* sampleUsers.swift in Sources */,
+				C007AA7B3F374F73AFD473EE /* astrodatingApp.swift in Sources */,
+				3A84B2FC9F1CC4C68666E3EA /* Person.swift in Sources */,
+				70F403DBA88F3794ABA200F0 /* QuizViewModel.swift in Sources */,
+				C77B1B6E42FAC3D2FE1ECBA6 /* QuizViewModel_ext.swift in Sources */,
+				B9AF77E9596572539DF18105 /* Chat2View.swift in Sources */,
+				5E5FEFFCE2179F9BEE21C242 /* Entry2View.swift in Sources */,
+				1C554EBC43A4EF3CC4A68749 /* EntryVM.swift in Sources */,
+				61BC98C2CCE59785072E0D2A /* Login2View.swift in Sources */,
+				902CFCFDB4C83B790A649AFA /* Person2DetailView.swift in Sources */,
+				E0026F7303F9827F29DDA81C /* Profile2View.swift in Sources */,
+				BED242C8D6520B310F2C1143 /* Register2View.swift in Sources */,
+				2C55A88CE73F3EE640A50FAB /* User2ListView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4F086F61930498C0D33841C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38C17962584788ECA41F2C1A /* astrodatingUITests.swift in Sources */,
+				D8FCA8EE658B2682A20A545E /* astrodatingUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C67A03A168C581230FE3A105 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FE776FF553D0C04D5646566 /* astrodatingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		49901D71749C1D3B761AA93A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AstroDating;
+			target = 476D8DA8057019A55B4E9E27 /* AstroDating */;
+			targetProxy = 06B887762A68028C60BE5415 /* PBXContainerItemProxy */;
+		};
+		CC93B05E488AC64694D33660 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AstroDating;
+			target = 476D8DA8057019A55B4E9E27 /* AstroDating */;
+			targetProxy = F38D2E1898CDBAFBFC361E48 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1224246E7032ABDFBA6409A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2CBAE35CA1CD4CB217E8E8B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Derived/InfoPlists/AstroDatingTests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.fenki.AstroDatingTests;
+				PRODUCT_NAME = AstroDatingTests;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AstroDating.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AstroDating";
+				TEST_TARGET_NAME = AstroDating;
+			};
+			name = Debug;
+		};
+		5B49AC3B12D4E60A5B973209 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = RSD67YH647;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Derived/InfoPlists/AstroDating-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = astrodating.ru;
+				PRODUCT_NAME = AstroDating;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6718A0ABFAB5B888E015F715 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Derived/InfoPlists/AstroDatingTests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.fenki.AstroDatingTests;
+				PRODUCT_NAME = AstroDatingTests;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AstroDating.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AstroDating";
+				TEST_TARGET_NAME = AstroDating;
+			};
+			name = Release;
+		};
+		7F7845BA5B77F375EB628491 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Derived/InfoPlists/AstroDatingUITests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.fenki.AstroDatingUITests;
+				PRODUCT_NAME = AstroDatingUITests;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AstroDating;
+			};
+			name = Debug;
+		};
+		CE68362009F93B4699B48F34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D820373BF2CB9324DE6FB117 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = RSD67YH647;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Derived/InfoPlists/AstroDating-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = astrodating.ru;
+				PRODUCT_NAME = AstroDating;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA0DFFE7E3909E3474065794 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Derived/InfoPlists/AstroDatingUITests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.fenki.AstroDatingUITests;
+				PRODUCT_NAME = AstroDatingUITests;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AstroDating;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		121408516562D8A783200540 /* Build configuration list for PBXProject "AstroDating" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1224246E7032ABDFBA6409A1 /* Debug */,
+				CE68362009F93B4699B48F34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68E141EA77B964EEF9621BC0 /* Build configuration list for PBXNativeTarget "AstroDatingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F7845BA5B77F375EB628491 /* Debug */,
+				EA0DFFE7E3909E3474065794 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DA1EB2E94F04CF5A9477898 /* Build configuration list for PBXNativeTarget "AstroDating" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D820373BF2CB9324DE6FB117 /* Debug */,
+				5B49AC3B12D4E60A5B973209 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85D3F4D8931E6176AE7679D1 /* Build configuration list for PBXNativeTarget "AstroDatingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CBAE35CA1CD4CB217E8E8B7 /* Debug */,
+				6718A0ABFAB5B888E015F715 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E87630266C6D3CC3245D02F2 /* Project object */;
+}
