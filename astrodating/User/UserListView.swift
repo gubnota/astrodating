@@ -30,6 +30,9 @@ struct UserListView: View {
             }
 //            .navigationTitle("Кандидаты")
 //            .navigationBarItems(leading: Rectangle().opacity(0),trailing: profileButton)
+        // Add a top safe area inset if needed Inserting a clear view to maintain proper spacing
+//        .safeAreaInset(edge: .top) {Color.clear.frame(height: 0)}
+//        .safeAreaInset(edge: .bottom) {Color.clear.frame(height: 0)}
 
     }
     

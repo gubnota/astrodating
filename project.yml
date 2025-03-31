@@ -1,3 +1,5 @@
+developmentTeam: RSD67YH647 #${TEAM_ID:SUBSCRIBE_TEAM_ID}  # From env or default
+
 name: AstroDating
 options:
   bundleIdPrefix: net.fenki
@@ -14,22 +16,68 @@ targets:
     platform: iOS
     sources: [astrodating/]
     resources: [astrodating/Assets.xcassets, astrodating/webchat]
-    info:
-      path: Info2.plist # Correct way to reference an existing Info.plist file
+    # info:
+      # path: astrodating/Info2.plist # Correct way to reference an existing Info.plist file
+      # properties:
+      #   CFBundleName: $(PRODUCT_NAME)
+      #   CFBundleIdentifier: $(PRODUCT_BUNDLE_IDENTIFIER)
+      #   CFBundleExecutable: $(EXECUTABLE_NAME)
+      #   CFBundleShortVersionString: 1.0.0
+      #   CFBundleVersion: 1
     dependencies: []
     settings:
       base:
         INFOPLIST_PREPROCESS: NO
-        INFOPLIST_FILE: "Info2.plist"
+        INFOPLIST_FILE: "astrodating/Info2.plist"
+      configs:
+        Debug:
+          DEVELOPMENT_TEAM: RSD67YH647 #${TEAM_ID:SUBSCRIBE_TEAM_ID}
+        Release:
+          DEVELOPMENT_TEAM: RSD67YH647 #${TEAM_ID:SUBSCRIBE_TEAM_ID}
   AstroDatingTests:
     type: bundle.unit-test
-    platform: iOS
+    platform: macOS
     sources: astrodatingTests
     dependencies:
       - target: AstroDating
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+      configs:
+        Debug:
+          DEVELOPMENT_TEAM: RSD67YH647 #${TEAM_ID:SUBSCRIBE_TEAM_ID}
+        Release:
+          DEVELOPMENT_TEAM: RSD67YH647 #${TEAM_ID:SUBSCRIBE_TEAM_ID}
   AstroDatingUITests:
     type: bundle.ui-testing
     platform: iOS
     sources: astrodatingUITests
     dependencies:
       - target: AstroDating
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+      configs:
+        Debug:
+          DEVELOPMENT_TEAM: RSD67YH647 #${TEAM_ID:SUBSCRIBE_TEAM_ID}
+        Release:
+          DEVELOPMENT_TEAM: RSD67YH647 #${TEAM_ID:SUBSCRIBE_TEAM_ID}
+
+schemes:
+  AstroDating:
+    build:
+      targets:
+        AstroDating: [run, test]
+    run:
+      executable: AstroDating
+      config: Debug
+    test:
+      config: Debug
+      targets:
+        - AstroDatingTests
+        - AstroDatingUITests
+    gatherCoverageData: true
+    storeContainer: false
+    commandLineArguments: {}
+    environmentVariables: {}
+  

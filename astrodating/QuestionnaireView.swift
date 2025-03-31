@@ -54,7 +54,9 @@ struct QuestionnaireView: View {
                 }
                 
             }
-
+// Add a top safe area inset if needed Inserting a clear view to maintain proper spacing
+//.safeAreaInset(edge: .top) {Color.clear.frame(height: 0)}
+//.safeAreaInset(edge: .bottom) {Color.clear.frame(height: 0)}
     }
         
 }

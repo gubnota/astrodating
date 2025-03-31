@@ -6,9 +6,9 @@ let project = Project(
     targets: [
         .target(
             name: "AstroDating",
-            destinations: [.iOS],
+            destinations: [.iPhone, .iPad],
             product: .app,
-            bundleId: "astrodating.ru",
+            bundleId: "astrodating",
             // infoPlist: .default,
         // infoPlist: .file(path: "Info2.plist"), // Ensure you point to the correct file here
     infoPlist:.extendingDefault(with:
@@ -25,7 +25,7 @@ let project = Project(
         ),
         .target(
             name: "AstroDatingTests",
-            destinations: .iOS,
+            destinations: [.iPhone, .iPad],
             product: .unitTests,
             bundleId: "net.fenki.AstroDatingTests",
             infoPlist: .default,
